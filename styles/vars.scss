@@ -1,0 +1,33 @@
+// Colors
+// $brand: #5865f2;
+$brand: #404eed;
+$brand-gradient: linear-gradient(90deg, #8ea1e1, #7289da);
+$greyple: #99aab5;
+$dark-not-black: #2c2f33;
+$focus-border: #00b0f4;
+$status-green: #43b581;
+$text-link: #00b0f4;
+$off-white: #f6f6f6;
+$white: #fff;
+$not-quite-black: #23272a;
+$not-quite-black-rgb: 35, 39, 42;
+$black: #000;
+$ekko-red: #de2761;
+
+
+// General space/grid
+$page-max-width: 1260px;
+$num-grid-columns: 4;
+$page-gutter: 24px;
+$section-spacing: 56px;
+
+@media screen and (min-width: 768px) {
+  $nuwym-grid-columns: 8;
+  $page-gutter: 40px;
+  $section-spacing: 80px;
+}
+
+@media screen and (min-width: 1024px) {
+  $num-grid-columns: 12;
+  $section-spacing: 120px;
+}
