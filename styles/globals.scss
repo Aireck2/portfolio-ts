@@ -15,3 +15,51 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Ginto Nord';
+  src: url('/fonts/GintoNord/GintoNord-Regular.otf');
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ginto Nord';
+  src: url('/fonts/GintoNord/GintoNord-Bold.otf');
+  font-style: bold;
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ginto Normal';
+  src: url('/fonts/GintoNord/GintoNormal-Regular.otf');
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ginto Normal';
+  src: url('/fonts/GintoNord/GintoNormal-Bold.otf');
+  font-style: bold;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Whitney';
+  src: url('/fonts/Whitney/Whitney-regular.otf');
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Whitney';
+  src: url('/fonts/Whitney/Whitney-bold.otf');
+  font-style: bold;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Reenie Beanie';
+  src: url('/fonts/ReenieBeanie/ReenieBeanie-Regular.ttf');
+  font-style: normal;
+  font-display: swap;
+}
