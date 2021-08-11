@@ -14,6 +14,8 @@ $not-quite-black-rgb: 35, 39, 42;
 $black: #000;
 $ekko-red: #de2761;
 
+$button-hover: #36393f;
+
 // Fonts
 $font-primary: 'Whitney', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $font-display: 'Ginto Normal', 'Whitney', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -27,6 +29,7 @@ $page-max-width: 1260px;
 $num-grid-columns: 4;
 $page-gutter: 24px;
 $section-spacing: 56px;
+$button-radius: 28px;
 
 @media screen and (min-width: 768px) {
   $nuwym-grid-columns: 8;
