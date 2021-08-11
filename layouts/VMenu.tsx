@@ -1,12 +1,17 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/layouts/VMenu.module.scss'
 
 const VMenu: NextPage = () => (
   <div className={styles.VMenu__background}>
     <div className={styles.VMenu__container}>
       <h1>
-        <Image src="/logos/logo.svg" alt="Erick Logo" width={34} height={34} />
+        <Link href="/">
+          <a>
+            <Image src="/logos/logo.svg" alt="Erick Logo" width={34} height={34} />
+          </a>
+        </Link>
       </h1>
       <ul className={styles.VMenu__navbar}>
         <li>
@@ -20,7 +25,9 @@ const VMenu: NextPage = () => (
         </li>
         <li>
           <button className={styles.VMenu__button}>
-            <a href="/resume">Resume</a>
+            <Link href="/resume_EN.pdf">
+              <a target="_blank">Resume</a>
+            </Link>
           </button>
         </li>
       </ul>
