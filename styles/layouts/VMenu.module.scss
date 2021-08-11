@@ -1,0 +1,48 @@
+@import '../vars.scss';
+
+.VMenu__background {
+  padding: 27px 50px;
+  background-color: $brand;
+}
+
+.VMenu__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.VMenu__navbar {
+  display: none;
+  font-size: 14px;
+  color: $white;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-content: center;
+  grid-gap: 40px;
+  font-family: $font-primary;
+  // font-weight: 400;
+}
+
+.VMenu__button {
+  background-color: $white;
+  color: $not-quite-black;
+  border-radius: $button-radius;
+  font-size: 14px;
+  outline: none;
+  font-family: $font-primary;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.VMenu__button:hover {
+  // background-color: $button-hover;
+  color: $brand;
+  box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+}
+
+@media screen and (min-width: 768px) {
+  .VMenu__navbar {
+    display: grid;
+  }
+}
