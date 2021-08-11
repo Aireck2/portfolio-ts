@@ -1,3 +1,4 @@
-import VContainer from "./VContainer";
+import VContainer from './VContainer'
+import VMenu from './VMenu'
 
-export { VContainer };
+export { VContainer, VMenu }
