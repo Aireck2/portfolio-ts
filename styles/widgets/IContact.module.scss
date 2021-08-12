@@ -1,0 +1,85 @@
+@import '../vars.scss';
+
+.IContact {
+  &__container {
+    text-align: center;
+    &_contact {
+      max-width: 600px;
+      margin: 100px auto 200px;
+    }
+  }
+
+  &__heading {
+    font-family: $font-primary;
+    font-size: 60px;
+    color: $white;
+    font-size: clamp(40px, 5vw, 60px);
+  }
+
+  &__subheading {
+    margin-bottom: 50px;
+    font-family: $font-primary;
+    color: $white;
+    font-size: clamp(15px, 0.6403rem + 1.2702vw, 20px);
+    &_highlight {
+      color: $brand;
+    }
+  }
+
+  &__body {
+    font-family: $font-primary;
+    color: $off-white;
+    font-size: 14px;
+  }
+  &__button {
+    background-color: $white;
+    color: $not-quite-black;
+    border-radius: $button-radius;
+    font-size: 20px;
+    outline: none;
+    font-family: $font-primary;
+    padding: 12px 28px;
+    cursor: pointer;
+    border: none;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+
+    &:hover {
+      color: $brand;
+      box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    }
+  }
+  &__github_stats {
+    color: $white;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      font-size: 14px;
+      & svg {
+        margin-right: 5px;
+        width: 14px;
+        height: 14px;
+      }
+    }
+    span {
+      & + span {
+        margin-left: 20px;
+      }
+    }
+  }
+  &__link {
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    &:hover p,
+    &:hover span {
+      color: $brand;
+    }
+  }
+}
