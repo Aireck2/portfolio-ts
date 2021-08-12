@@ -2,19 +2,11 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 
 import { VContainer, VMenu } from '../layouts'
+import { IAbout, IHome } from '../widgets'
 
 import styles from '../styles/views/Home.module.scss'
 
 const Home: NextPage = (props) => {
-  const homeInfo = {
-    greetings: 'Hi, my name is',
-    name: 'Erick Escriba',
-    phrase: 'I build things for the web',
-    description: `I'm a front-end developer based in Lima, Peru . I'm currently into Web Development and
-              I'm passionate in building exceptional websites`,
-    email: 'erickescribaa@gmail.com',
-  }
-
   return (
     <>
       <Head>
@@ -23,19 +15,15 @@ const Home: NextPage = (props) => {
         <link rel="icon" href="/logos/logo.svg" />
       </Head>
       <VMenu />
-      <div className={styles.Home__background}>
+      <div className={styles.Home__banner}>
         <VContainer>
-          <div className={styles.Home__container}>
-            <h2 className={styles.Home__body__brand}>Hi, my name is</h2>
-            <h2 className={styles.Home__heading}>{homeInfo.name}.</h2>
-            <h2 className={styles.Home__heading}>{homeInfo.phrase}.</h2>
-            <p className={styles.Home__body}>{homeInfo.description}</p>
-            <button className={styles.Home__button}>
-              <a href={`mailto:${homeInfo.email}`} target="_blank">
-                Get in touch
-              </a>
-            </button>
-          </div>
+          <IHome />
+        </VContainer>
+      </div>
+
+      <div className={styles.Home__about}>
+        <VContainer>
+          <IAbout />
         </VContainer>
       </div>
     </>
