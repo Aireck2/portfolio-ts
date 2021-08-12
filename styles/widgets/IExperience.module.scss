@@ -1,10 +1,8 @@
 @import '../vars.scss';
 
-$transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-
 .IExperience {
   &__container {
-    max-width: 700px;
+    max-width: 600px;
     margin: 100px auto;
   }
 

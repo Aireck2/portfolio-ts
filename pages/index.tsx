@@ -5,6 +5,7 @@ import { VContainer, VMenu } from '../layouts'
 import { IAbout, IExperience, IHome } from '../widgets'
 
 import styles from '../styles/views/Home.module.scss'
+import IContact from '../widgets/IContact'
 
 const Home: NextPage = (props) => {
   return (
@@ -29,6 +30,12 @@ const Home: NextPage = (props) => {
       <div className={styles.Home__experience}>
         <VContainer>
           <IExperience />
+        </VContainer>
+      </div>
+
+      <div className={styles.Home__contact}>
+        <VContainer>
+          <IContact />
         </VContainer>
       </div>
     </>

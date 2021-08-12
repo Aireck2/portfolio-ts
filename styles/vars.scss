@@ -31,6 +31,8 @@ $page-gutter: 24px;
 $section-spacing: 56px;
 $button-radius: 28px;
 
+$transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
 @media screen and (min-width: 768px) {
   $nuwym-grid-columns: 8;
   $page-gutter: 40px;
