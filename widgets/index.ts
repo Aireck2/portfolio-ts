@@ -1,3 +1,4 @@
-import IHome from "./IHome";
+import IHome from './IHome'
+import IAbout from './IAbout'
 
-export { IHome };
+export { IHome, IAbout }
