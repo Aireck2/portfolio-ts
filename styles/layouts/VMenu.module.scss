@@ -13,26 +13,31 @@
 
 .VMenu__navbar {
   display: none;
-  font-size: 14px;
+  font-size: 16px;
   color: $white;
   grid-template-columns: repeat(4, auto);
   align-items: center;
   justify-content: center;
   grid-gap: 40px;
   font-family: $font-primary;
-  // font-weight: 400;
+  & li > a:hover {
+    text-decoration: underline;
+  }
 }
 
 .VMenu__button {
   background-color: $white;
   color: $not-quite-black;
   border-radius: $button-radius;
-  font-size: 14px;
+  font-size: 16px;
   outline: none;
   font-family: $font-primary;
   padding: 8px 16px;
   cursor: pointer;
   border: none;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 .VMenu__button:hover {
