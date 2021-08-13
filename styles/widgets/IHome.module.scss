@@ -1,56 +1,60 @@
 @import '../vars.scss';
 
-.IHome__container {
-  max-width: 932px;
-  margin: auto;
-}
-
-.IHome__heading {
-  font-family: $font-display;
-  font-size: clamp(1.875rem, -0.2831rem + 9.2081vw, 5rem);
-  color: $white;
-}
-
 %shared-font-display {
-  font-family: $font-primary;
+  font-family: $font-display;
   max-width: 500px;
   color: $white;
   font-size: clamp(15px, 0.6403rem + 1.2702vw, 20px);
 }
 
-.IHome__body {
-  @extend %shared-font-display;
-}
-.IHome__body__brand {
-  @extend %shared-font-display;
-  color: $white;
-  font-weight: normal;
-}
+.IHome {
+  &__container {
+    max-width: 932px;
+    margin: auto;
+  }
 
-.IHome__button {
-  background-color: $not-quite-black;
-  color: $white;
-  border-radius: $button-radius;
-  font-size: 20px;
-  outline: none;
-  font-family: $font-primary;
-  padding: 16px 32px;
-  cursor: pointer;
-  border: none;
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
+  &__heading {
+    font-family: $font-headline;
+    // font-size: clamp(30px, -0.2831rem + 9.2081vw, 56px);
+    font-size: clamp(1.875rem, 0.8678rem + 4.2975vw, 3.5rem);
+    color: $white;
+  }
 
-.IHome__button:hover {
-  background-color: $button-hover;
-  box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
-}
+  &__body {
+    @extend %shared-font-display;
 
-.IHome__background {
-  background-color: $brand;
-  padding: 75px 0;
-  background-image: url('/images/background.svg');
-  background-position: bottom;
-  background-repeat: no-repeat;
+    &__brand {
+      @extend %shared-font-display;
+      color: $white;
+      font-weight: normal;
+    }
+  }
+
+  &__button {
+    background-color: $not-quite-black;
+    color: $white;
+    border-radius: $button-radius;
+    font-size: 20px;
+    outline: none;
+    font-family: $font-primary;
+    padding: 16px 32px;
+    cursor: pointer;
+    border: none;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+
+    &:hover {
+      background-color: $button-hover;
+      box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    }
+  }
+
+  &__background {
+    background-color: $brand;
+    padding: 75px 0;
+    background-image: url('/images/background.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
 }

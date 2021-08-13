@@ -1,67 +1,23 @@
 @import '../vars.scss';
 
-.Home__container {
-  max-width: 932px;
-  margin: auto;
-}
+.Home {
+  &__banner {
+    background-color: $brand;
+    padding: 75px 0;
+    background-image: url('/images/background.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
 
-.Home__heading {
-  font-family: $font-display;
-  font-size: clamp(1.875rem, -0.2831rem + 9.2081vw, 5rem);
-  color: $white;
-}
+  &__about {
+    color: $not-quite-black;
+  }
 
-%shared-font-display {
-  font-family: $font-primary;
-  max-width: 500px;
-  color: $white;
-  font-size: clamp(0.875rem, 0.616rem + 1.105vw, 1.25rem);
-}
-
-.Home__body {
-  @extend %shared-font-display;
-}
-.Home__body__brand {
-  @extend %shared-font-display;
-  color: $white;
-  font-weight: normal;
-}
-
-.Home__button {
-  background-color: $not-quite-black;
-  color: $white;
-  border-radius: $button-radius;
-  font-size: 20px;
-  outline: none;
-  font-family: $font-primary;
-  padding: 16px 32px;
-  cursor: pointer;
-  border: none;
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-
-.Home__button:hover {
-  background-color: $button-hover;
-  box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
-}
-
-.Home__banner {
-  background-color: $brand;
-  padding: 75px 0;
-  background-image: url('/images/background.svg');
-}
-
-.Home__about {
-  color: $not-quite-black;
-}
-
-.Home__experience {
-  color: $not-quite-black;
-  background-color: $off-white;
-}
-
-.Home__contact {
-  background-color: $not-quite-black;
+  &__experience {
+    color: $not-quite-black;
+    background-color: $off-white;
+  }
+  &__contact {
+    background-color: $not-quite-black;
+  }
 }
