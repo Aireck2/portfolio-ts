@@ -22,18 +22,18 @@ const Home: NextPage = (props) => {
         </VContainer>
       </div>
 
-      <div className={styles.Home__about}>
+      <div className={styles.Home__about} id="about">
         <VContainer>
           <IAbout />
         </VContainer>
       </div>
-      <div className={styles.Home__experience}>
+      <div className={styles.Home__experience} id="experience">
         <VContainer>
           <IExperience />
         </VContainer>
       </div>
 
-      <div className={styles.Home__contact}>
+      <div className={styles.Home__contact} id="contact">
         <VContainer>
           <IContact />
         </VContainer>
