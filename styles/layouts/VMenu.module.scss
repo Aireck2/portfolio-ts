@@ -1,53 +1,59 @@
 @import '../vars.scss';
 
-.VMenu__background {
-  padding: 27px 50px;
-  background-color: $brand;
-}
+.VMenu {
+  &__background {
+    padding: 27px 25px;
+    background-color: $brand;
+  }
 
-.VMenu__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.VMenu__navbar {
-  display: none;
-  font-size: 16px;
-  color: $white;
-  grid-template-columns: repeat(4, auto);
-  align-items: center;
-  justify-content: center;
-  grid-gap: 40px;
-  font-family: $font-primary;
-  & li > a:hover {
-    text-decoration: underline;
+  &__navbar {
+    display: none;
+    font-size: 16px;
+    color: $white;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 40px;
+    font-family: $font-primary;
+    & li > a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__button {
+    background-color: $white;
+    color: $not-quite-black;
+    border-radius: $button-radius;
+    font-size: 16px;
+    outline: none;
+    font-family: $font-primary;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  &__button:hover {
+    color: $brand;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
   }
 }
 
-.VMenu__button {
-  background-color: $white;
-  color: $not-quite-black;
-  border-radius: $button-radius;
-  font-size: 16px;
-  outline: none;
-  font-family: $font-primary;
-  padding: 8px 16px;
-  cursor: pointer;
-  border: none;
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-
-.VMenu__button:hover {
-  // background-color: $button-hover;
-  color: $brand;
-  box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
-}
-
 @media screen and (min-width: 768px) {
-  .VMenu__navbar {
-    display: grid;
+  .VMenu {
+    &__background {
+      padding: 27px 50px;
+    }
+    &__navbar {
+      display: grid;
+    }
   }
 }

@@ -20,7 +20,7 @@
   &__body {
     font-family: $font-primary;
     color: $not-quite-black;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   &__skill {
@@ -33,7 +33,7 @@
       position: relative;
       margin-bottom: 10px;
       padding-left: 20px;
-      font-size: 14px;
+      font-size: 16px;
 
       &::before {
         content: '▹';
