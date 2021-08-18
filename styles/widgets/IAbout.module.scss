@@ -8,30 +8,83 @@
 
   &__grid_container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 450px), 1fr));
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 20px;
   }
 
   &__photo {
     background-color: $not-quite-black;
-    width: 100%;
-    height: 400px;
 
     &_container {
-      padding: 40px;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    &__wrapper {
+      box-shadow: 0 10px 30px -15px $not-quite-black;
+      transition: $transition;
+      display: block;
+      position: relative;
+      width: 100%;
+      border-radius: $border-radius;
+      background-color: $brand;
+      & img {
+        position: relative;
+        border-radius: $border-radius;
+        mix-blend-mode: multiply;
+        filter: grayscale(100%) contrast(1);
+        transition: $transition;
+      }
+      &:hover img,
+      &:focus img {
+        filter: none;
+        mix-blend-mode: normal;
+      }
+
+      &::before {
+        top: 0px;
+        left: 0px;
+        background-color: $brand;
+        mix-blend-mode: screen;
+      }
+      &::after {
+        border: 2px solid $brand;
+        top: 20px;
+        left: 20px;
+        z-index: -1;
+      }
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: $border-radius;
+        transition: $transition;
+      }
+      &:hover::after,
+      &:focus::after {
+        top: 15px;
+        left: 15px;
+      }
     }
   }
 
   &__subheading {
-    font-family: $font-primary;
+    font-family: $font-display;
     font-size: 32px;
     color: $not-quite-black;
+    font-weight: 900;
   }
 
   &__body {
     font-family: $font-primary;
     color: $not-quite-black;
-    font-size: clamp(15px, 0.6403rem + 1.2702vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: 32px;
   }
 
   &__skill_list {
@@ -52,6 +105,19 @@
       left: 0px;
       color: $brand;
       line-height: 12px;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: 768px) {
+    .IAbout {
+      &__grid_container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: unset;
+        grid-gap: 20px;
+      }
     }
   }
 }
