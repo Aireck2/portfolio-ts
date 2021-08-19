@@ -2,10 +2,9 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 
 import { VContainer, VMenu } from '../layouts'
-import { IAbout, IExperience, IHome } from '../widgets'
+import { IAbout, IExperience, IHome, IContact } from '../widgets'
 
 import styles from '../styles/views/Home.module.scss'
-import IContact from '../widgets/IContact'
 
 const Home: NextPage = (props) => {
   return (
