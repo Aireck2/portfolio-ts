@@ -10,26 +10,29 @@
   }
 
   &__heading {
-    font-family: $font-primary;
-    font-size: 60px;
-    color: $white;
-    font-size: clamp(40px, 5vw, 60px);
+    color: $brand;
+    font-family: $font-headline;
+    font-weight: 800;
+    line-height: 95%;
+    text-transform: uppercase;
+    font-size: 32px;
+    text-rendering: geometricPrecision;
   }
-
   &__subheading {
     margin-bottom: 50px;
     font-family: $font-primary;
-    color: $white;
-    font-size: clamp(15px, 0.6403rem + 1.2702vw, 20px);
+    color: $off-white;
+
+    line-height: 32px;
+    font-size: clamp(16px, 2vw, 20px);
     &_highlight {
-      color: $brand;
+      color: $greyple;
     }
   }
 
   &__body {
     font-family: $font-primary;
-    color: $off-white;
-    font-size: 14px;
+    color: $greyple;
   }
   &__button {
     background-color: $white;
@@ -51,7 +54,7 @@
     }
   }
   &__github_stats {
-    color: $white;
+    color: $greyple;
     max-width: 600px;
     margin: auto;
     display: flex;
