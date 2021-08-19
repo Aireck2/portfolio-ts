@@ -7,19 +7,20 @@
   }
 
   &__heading {
-    font-family: $font-primary;
+    font-family: $font-display;
     font-size: 32px;
     color: $not-quite-black;
+    font-weight: 900;
   }
 
   &__subheading {
     margin-bottom: 5px;
-    font-weight: 500;
+    font-size: clamp(16px, 2vw, 20px);
   }
 
   &__body {
     font-family: $font-primary;
-    color: $not-quite-black;
+    color: $greyple;
     font-size: 16px;
   }
 
@@ -28,6 +29,8 @@
       padding: 0;
       display: grid;
       grid-template-columns: 1fr;
+      font-size: clamp(16px, 2vw, 20px);
+      line-height: 22px;
     }
     &_item {
       position: relative;
@@ -62,7 +65,7 @@
         content: '';
         display: block;
         width: 0px;
-        height: 1px;
+        height: 2px;
         position: relative;
         bottom: 0;
         background-color: $brand;
