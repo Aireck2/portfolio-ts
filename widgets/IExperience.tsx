@@ -8,10 +8,10 @@ const IExperience = () => {
     jobPosition: 'Front-end Developer',
     email: 'erickescribaa@gmail.com',
     jobDescription: [
-      'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-      'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
-      'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis',
-      'Worked closely with designers and management team to develop, document, and manage the conference’s marketing website using Jekyll, Sass, and JavaScript',
+      'I wrote modern, efficient and robust code for a wide range of internal projects',
+      'I worked with a variety of languages and frameworks like JavaScript, TypeScript, React, Nextjs, Graphql, etc.',
+      'I worked closely with the designers and the commercial team to develop, document and manage the website using Nextjs, css and typescript.',
+      'Use APIʼs to connect the web application with various services and systems.',
     ],
   }
   return (
