@@ -1,6 +1,7 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+
 import styles from '../styles/layouts/VMenu.module.scss'
 
 const VMenu: NextPage = () => (

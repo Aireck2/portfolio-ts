@@ -18,7 +18,7 @@ const IAbout = () => {
       'GraphQL',
       'Node.js',
       'Git',
-      'CSS',
+      'CSS3',
       'SCSS',
       'LESS',
     ],
