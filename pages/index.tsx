@@ -2,9 +2,10 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 
 import { VContainer, VMenu } from '../layouts'
-import { IAbout, IExperience, IHome, IContact } from '../widgets'
+import { IAbout, IExperience, IHome, IContact, IEmail, ISocial } from '../widgets'
 
 import styles from '../styles/views/Home.module.scss'
+import React from 'react'
 
 const Home: NextPage = (props) => {
   return (
@@ -15,6 +16,8 @@ const Home: NextPage = (props) => {
         <link rel="icon" href="/logos/logo.svg" />
       </Head>
       <VMenu />
+      <IEmail />
+      <ISocial />
       <div className={styles.Home__banner}>
         <VContainer>
           <IHome />
