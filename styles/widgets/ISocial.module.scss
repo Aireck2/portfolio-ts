@@ -1,0 +1,102 @@
+@import '../vars.scss';
+
+.IEmail {
+  &__container {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: $greyple;
+
+    &__email {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        color: inherit;
+        position: relative;
+        transition: $transition;
+        margin: 20px auto;
+        padding: 10px;
+        font-family: $font-primary;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        writing-mode: vertical-rl;
+
+        &:hover,
+        &:focus {
+          transform: translateY(-3px);
+          color: $brand;
+        }
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: $greyple;
+      }
+    }
+  }
+}
+
+.ISocial {
+  &__container {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: $greyple;
+
+    &__social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        color: inherit;
+        position: relative;
+        transition: $transition;
+        padding: 10px;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+
+        &:hover,
+        &:focus {
+          transform: translateY(-3px);
+          color: $brand;
+        }
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: $greyple;
+      }
+    }
+  }
+}
