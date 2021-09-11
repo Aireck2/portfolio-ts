@@ -10,10 +10,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__wrapper {
+      display: none;
+    }
   }
 
   &__navbar {
-    display: none;
+    display: flex;
     font-size: 16px;
     color: $white;
     grid-template-columns: repeat(4, auto);
@@ -52,8 +55,10 @@
     &__background {
       padding: 27px 50px;
     }
-    &__navbar {
-      display: grid;
+    &__container {
+      &__wrapper {
+        display: block;
+      }
     }
   }
 }
