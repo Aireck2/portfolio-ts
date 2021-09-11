@@ -28,8 +28,10 @@ const IAbout = () => {
       <h2 className={styles.IAbout__subheading}>About Me</h2>
       <div className={styles.IAbout__grid_container}>
         <div>
-          {info.description.map((description) => (
-            <p className={styles.IAbout__body}>{description}</p>
+          {info.description.map((description, index) => (
+            <p key={index} className={styles.IAbout__body}>
+              {description}
+            </p>
           ))}
           <ul className={styles.IAbout__skill_list}>
             {info.skills.map((skill, index) => (

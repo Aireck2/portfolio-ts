@@ -2,6 +2,7 @@
 
 .IEmail {
   &__container {
+    display: none;
     width: 40px;
     position: fixed;
     bottom: 0px;
@@ -23,7 +24,6 @@
         color: inherit;
         position: relative;
         transition: $transition;
-        margin: 20px auto;
         padding: 10px;
         font-family: $font-primary;
         font-size: 14px;
@@ -42,7 +42,7 @@
         content: '';
         display: block;
         width: 1px;
-        height: 90px;
+        height: 60px;
         margin: 0px auto;
         background-color: $greyple;
       }
@@ -52,6 +52,7 @@
 
 .ISocial {
   &__container {
+    display: none;
     width: 40px;
     position: fixed;
     bottom: 0px;
@@ -93,9 +94,24 @@
         content: '';
         display: block;
         width: 1px;
-        height: 90px;
+        height: 60px;
         margin: 0px auto;
         background-color: $greyple;
+      }
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: 768px) {
+    .IEmail {
+      &__container {
+        display: block;
+      }
+    }
+    .ISocial {
+      &__container {
+        display: block;
       }
     }
   }
