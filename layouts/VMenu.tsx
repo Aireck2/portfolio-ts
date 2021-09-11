@@ -1,30 +1,31 @@
+import { useState } from 'react'
 import { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
 import styles from '../styles/layouts/VMenu.module.scss'
 
-const VMenu: NextPage = () => (
-  <div className={styles.VMenu__background}>
-    <div className={styles.VMenu__container}>
-      <h1>
-        <Link href="/">
-          <a>
-            <Image src="/logos/logo.svg" alt="Erick Logo" width={34} height={34} />
-          </a>
-        </Link>
-      </h1>
+const VMenu: NextPage = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+
+  const menuItems = [
+    { name: 'About', url: '#about' },
+    { name: 'Experience', url: '#experience' },
+    { name: 'Contact', url: '#contact' },
+  ]
+
+  const menu = (
+    <nav>
       <ul className={styles.VMenu__navbar}>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-        <li>
+        {menuItems.map((item, index) => (
+          <li key={index}>
+            <a href={item.url}>{item.name}</a>
+          </li>
+        ))}
+
+        <li key="button">
           <button className={styles.VMenu__button}>
             <Link href="/resume_EN.pdf">
               <a target="_blank">Resume</a>
@@ -32,7 +33,32 @@ const VMenu: NextPage = () => (
           </button>
         </li>
       </ul>
+    </nav>
+  )
+
+  return (
+    <div className={styles.VMenu__background}>
+      <div className={styles.VMenu__container}>
+        <h1>
+          <Link href="/">
+            <a>
+              <Image src="/logos/logo.svg" alt="Erick Logo" width={34} height={34} />
+            </a>
+          </Link>
+        </h1>
+        <div className={styles.VMenu__container__wrapper}>{menu}</div>
+        <button
+          type="button"
+          onClick={toggleMenu}
+          className={`MenuIcon${isMenuOpen ? ' active' : ''}`}
+        >
+          <div className="ham-box">
+            <div className="ham-box-inner" />
+          </div>
+        </button>
+        <aside className={`Aside${isMenuOpen ? ' active' : ''}`}>{menu}</aside>
+      </div>
     </div>
-  </div>
-)
+  )
+}
 export default VMenu
