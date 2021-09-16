@@ -9,14 +9,14 @@
     <img src="public/logos/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Portfolio</h3>
+  <h3 align="center">Erick Escriba Portfolio</h3>
 
   <p align="center">
     My awesome Personal Portfolio Website!
     <br />
-    <a href="https://github.com/aireck2/portfolio-next"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
+    <!-- <a href="https://github.com/aireck2/portfolio-next"><strong>Explore the docs »</strong></a>
+    <br /> -->
+    <!-- <br /> -->
     <a href="https://github.com/aireck2/portfolio-next">View Demo</a>
     ·
     <a href="https://github.com/aireck2/portfolio-next/issues">Report Bug</a>
