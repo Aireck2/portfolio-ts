@@ -7,7 +7,7 @@ import { IAbout, IExperience, IHome, IContact, IEmail, ISocial } from '../widget
 import styles from '../styles/views/Home.module.scss'
 import React from 'react'
 
-const Home: NextPage = (props) => {
+const Home: NextPage = (_props) => {
   return (
     <>
       <Head>
