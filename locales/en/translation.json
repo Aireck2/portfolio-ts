@@ -1,0 +1,30 @@
+{
+    "Index": {
+        "about": "About",
+        "experience": "Experience",
+        "contact": "Contact",
+        "resume": "Resume",
+
+        "greet": "Hi, my name is",
+        "description": "I'm a front-end developer based in Lima, Peru . I'm currently into Web Development and I 'm passionate in building exceptional websites",
+        "getInTouch": "Get in touch",
+
+        "aboutMe": "About me",
+        "description1": "Hi there! My name is Erick and I enjoy creating things on the Internet. My interest in web development started in 2018, after the first conversation I had when I fortunately got a scholarship to take a course of socio-emotional skills and  web development by Fundación Forge (NGO) and Via Codigo, who taught me the basics: HTML5, CSS3 and the foundations of JS.",
+        "description2": "Nowadays, I have the privilege of working on a startup that has taught me a lot in a short period of time. My main focus these days is to implementing the most beneficial solutions in internal projects, that suits to the Equip Industry business model",
+        "description3": "Here are some technologies with which I have been working recently:",
+
+        "work": "Where I've worked",
+        "jobDate1": "Dec 2019 - Present",
+        "jobDescription1": "I wrote modern, efficient and robust code for a wide range of internal projects.",
+        "jobDescription2": "I worked with a variety of languages and frameworks like JavaScript, TypeScript, React, Nextjs, Graphql, etc.",
+        "jobDescription3": "I worked closely with the designers and the commercial team to develop, document and manage the website using Nextjs, css and TypeScript.",
+        "jobDescription4": "Use APIʼs to connect the web application with various services and systems.",
+
+        "whatsNext": "What's next?",
+        "contactDescription": "Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+        "sayHello": "Say Hello",
+
+        "switchLocale": "Switch to {locale, select, es {Spanish} en {English} other {}}"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "Index": {
+        "about": "Sobre Mi",
+        "experience": "Experiencia",
+        "contact": "Contacto",
+        "resume": "Currículum",
+
+        "greet": "Hola, mi nombre es",
+        "description": "Soy un desarrollador front-end, resido en Lima, Perú. Actualmente me dedico al desarrollo web y me apasiona la creación de sitios web excepcionales.",
+        "getInTouch": "Contáctame",
+
+        "aboutMe": "Sobre mí",
+        "description1": "¡Hola! Mi nombre es Erick y disfruto creando cosas en Internet. Mi interés por el desarrollo web comenzó en 2018, luego de la primera conversación que tuve cuando afortunadamente obtuve una beca para realizar un curso de habilidades socioemocionales y desarrollo web de la mano de Fundación Forge (ONG) y Via Codigo, quienes me enseñaron lo básico: HTML5 , CSS3 y los fundamentos de JS.",
+        "description2": "Hoy en día, tengo el privilegio de trabajar en una startup que me ha enseñado mucho en poco tiempo. Mi principal enfoque estos días es implementar las soluciones más beneficiosas en proyectos internos, que se adapten al modelo de negocio de Equip Industry.",
+        "description3": "Estas son algunas tecnologías con las que he trabajado recientemente:",
+
+        "work": "Experiencia",
+        "jobDate1": "Dic 2019 - Presente",
+        "jobDescription1": "Escribí código moderno, eficiente y robusto para una amplia gama de proyectos internos.",
+        "jobDescription2": "Trabajé con una variedad de lenguajes y frameworks como JavaScript, TypeScript, React, Nextjs, Graphql, etc.",
+        "jobDescription3": "Trabajé en estrecha colaboración con los diseñadores y el equipo comercial para desarrollar, documentar y administrar el sitio web utilizando Nextjs, css y TypeScript.",
+        "jobDescription4": "Utilice API para conectar la aplicación web con varios servicios y sistemas.",
+
+
+        "whatsNext": "¿Que sigue?",
+        "contactDescription": "Aunque actualmente no estoy buscando nuevas oportunidades, mi bandeja de entrada siempre está abierta. Ya sea que tenga una pregunta o simplemente quiera saludar, ¡haré todo lo posible para responder!",
+        "sayHello": "Salúdame",
+
+        "switchLocale": "Cambiar a {locale, select, es {Español} en {Inglés} other {}}"
+    }
+}
