@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import { NextPage } from 'next'
+import { useRouter } from 'next/router'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useTranslations } from 'next-intl'
 
 import styles from '../styles/layouts/VMenu.module.scss'
 
 const VMenu: NextPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const { locale, locales } = useRouter()
   const t = useTranslations('Index')
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
@@ -29,7 +32,7 @@ const VMenu: NextPage = () => {
 
         <li key="button">
           <button className={styles.VMenu__button}>
-            <Link href="/resume_EN.pdf">
+            <Link href={`/resume_${locale?.toUpperCase()}.pdf`}>
               <a target="_blank">{t('resume')}</a>
             </Link>
           </button>
