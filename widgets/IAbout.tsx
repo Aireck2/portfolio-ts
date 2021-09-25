@@ -1,14 +1,16 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
 import styles from '../styles/widgets/IAbout.module.scss'
 
 const IAbout = () => {
+  const t = useTranslations('Index')
+
   const info = {
     description: [
-      ` Hi there! My name is Erick and I enjoy creating things on the Internet.
-      My interest in web development started in 2018, after the first conversation I had when I fortunately got a scholarship to take a course of socio-emotional skills and  web development by Foundation Forge (NGO) and Via Codigo, who taught me the basics: HTML5, CSS3 and the foundations of JS.`,
-      ' Nowadays, I have the privilege of working on a startup that has taught me a lot in a short period of time. My main focus these days is to implementing the most beneficial solutions in internal projects that suits to the Equip Industry business model',
-      'Here are some technologies with which I have been working recently:',
+      t('description1'),
+      t('description2'),
+      t('description3'),
     ],
     skills: [
       'Typescript',
@@ -17,6 +19,7 @@ const IAbout = () => {
       'JavaScript (ES6+)',
       'GraphQL',
       'Node.js',
+      'MongoDB',
       'Git',
       'CSS3',
       'SCSS',
@@ -25,7 +28,7 @@ const IAbout = () => {
   }
   return (
     <div className={styles.IAbout__container}>
-      <h2 className={styles.IAbout__subheading}>About Me</h2>
+      <h2 className={styles.IAbout__subheading}>{t('aboutMe')}</h2>
       <div className={styles.IAbout__grid_container}>
         <div>
           {info.description.map((description, index) => (

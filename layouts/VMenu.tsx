@@ -2,18 +2,20 @@ import { useState } from 'react'
 import { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 import styles from '../styles/layouts/VMenu.module.scss'
 
 const VMenu: NextPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const t = useTranslations('Index')
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   const menuItems = [
-    { name: 'About', url: '#about' },
-    { name: 'Experience', url: '#experience' },
-    { name: 'Contact', url: '#contact' },
+    { name: t('about'), url: '#about' },
+    { name: t('experience'), url: '#experience' },
+    { name: t('contact'), url: '#contact' },
   ]
 
   const menu = (
@@ -28,7 +30,7 @@ const VMenu: NextPage = () => {
         <li key="button">
           <button className={styles.VMenu__button}>
             <Link href="/resume_EN.pdf">
-              <a target="_blank">Resume</a>
+              <a target="_blank">{t('resume')}</a>
             </Link>
           </button>
         </li>

@@ -1,6 +1,10 @@
+import { useTranslations } from 'next-intl'
+
 import styles from '../styles/widgets/IExperience.module.scss'
 
 const IExperience = () => {
+  const t = useTranslations('Index')
+
   const info = {
     name: 'Erick Escriba',
     company: 'EquipIndustry',
@@ -8,15 +12,15 @@ const IExperience = () => {
     jobPosition: 'Front-end Developer',
     email: 'erickescribaa@gmail.com',
     jobDescription: [
-      'I wrote modern, efficient and robust code for a wide range of internal projects',
-      'I worked with a variety of languages and frameworks like JavaScript, TypeScript, React, Nextjs, Graphql, etc.',
-      'I worked closely with the designers and the commercial team to develop, document and manage the website using Nextjs, css and typescript.',
-      'Use APIʼs to connect the web application with various services and systems.',
+      t('jobDescription1'),
+      t('jobDescription2'),
+      t('jobDescription3'),
+      t('jobDescription4'),
     ],
   }
   return (
     <div className={styles.IExperience__container}>
-      <h2 className={styles.IExperience__heading}>Where I've worked</h2>
+      <h2 className={styles.IExperience__heading}>{t('work')}</h2>
       <p className={styles.IExperience__subheading}>
         {`${info.jobPosition} `}
         <span className={styles.IExperience__highlight}>
@@ -26,9 +30,7 @@ const IExperience = () => {
           </a>
         </span>
       </p>
-      <span className={styles.IExperience__body}>
-        Dec 2019 - Present 
-      </span>
+      <span className={styles.IExperience__body}>{t('jobDate1')}</span>
       <ul className={styles.IExperience__skill_list}>
         {info.jobDescription.map((job, index) => (
           <li key={index} className={styles.IExperience__skill_item}>
