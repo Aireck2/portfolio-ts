@@ -3,8 +3,11 @@ import Star from '../public/icons/star.svg'
 import Fork from '../public/icons/fork.svg'
 import React from 'react'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 const IContact = () => {
+  const t = useTranslations('Index')
+
   const info = {
     name: 'Erick Escriba',
     company: 'EquipIndustry',
@@ -16,15 +19,12 @@ const IContact = () => {
   return (
     <div className={styles.IContact__container}>
       <div className={styles.IContact__container_contact}>
-        <p className={styles.IContact__subheading_highlight}>What's next?</p>
-        <h2 className={styles.IContact__heading}>Get In Touch</h2>
-        <p className={styles.IContact__subheading}>
-          Although I'm not currently looking for any new opportunities, my inbox is always open.
-          Whether you have a question or just want to say hi, I'll try my best to get back to you!
-        </p>
+        <p className={styles.IContact__subheading_highlight}>{t('whatsNext')}</p>
+        <h2 className={styles.IContact__heading}>{t('getInTouch')}</h2>
+        <p className={styles.IContact__subheading}>{t('contactDescription')}</p>
         <button className={styles.IContact__button}>
           <a href={`mailto:${info.email}`} target="_blank">
-            Say Hello
+            {t('sayHello')}
           </a>
         </button>
       </div>
