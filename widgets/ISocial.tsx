@@ -17,7 +17,7 @@ const ISocial = () => {
       <ul className={styles.ISocial__container__social}>
         {socialArr.map((social, index) => (
           <li key={index}>
-            <a href={`${social.url}`} target="_blank">
+            <a href={`${social.url}`} target="_blank" rel="noreferrer">
               <social.icon />
             </a>
           </li>
