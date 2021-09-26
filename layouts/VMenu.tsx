@@ -1,17 +1,19 @@
 import { useState } from 'react'
 import { NextPage } from 'next'
-import { useRouter } from 'next/router'
-import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 import styles from '../styles/layouts/VMenu.module.scss'
 
 const VMenu: NextPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { locale, locales, route } = useRouter()
 
-  const { locale, locales } = useRouter()
   const t = useTranslations('Index')
+
+  const otherLocale = locales?.find((cur) => cur !== locale)
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
@@ -36,6 +38,25 @@ const VMenu: NextPage = () => {
               <a target="_blank">{t('resume')}</a>
             </Link>
           </button>
+        </li>
+        <li key="button-locale">
+          <Link href={route} locale={otherLocale}>
+            <a>
+              <button className={styles.VMenu__button}>
+                {locale === 'es' ? (
+                  <>
+                    <Image src="/images/flag_spain.png" alt="" width="23.3" height="15.6" />
+                    <span style={{ marginLeft: 8 }}>Español</span>
+                  </>
+                ) : (
+                  <>
+                    <Image src="/images/flag_usa.png" alt="" width="23.3" height="15.6" />
+                    <span style={{ marginLeft: 8 }}>English</span>
+                  </>
+                )}
+              </button>
+            </a>
+          </Link>
         </li>
       </ul>
     </nav>

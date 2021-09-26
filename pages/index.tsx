@@ -1,8 +1,5 @@
 import { NextPage } from 'next'
-import { useRouter } from 'next/router'
-import { useTranslations } from 'next-intl'
 import Head from 'next/head'
-import Link from 'next/link'
 
 import { VContainer, VMenu } from '../layouts'
 import { IAbout, IExperience, IHome, IContact, IEmail, ISocial } from '../widgets'
@@ -10,11 +7,6 @@ import { IAbout, IExperience, IHome, IContact, IEmail, ISocial } from '../widget
 import styles from '../styles/views/Home.module.scss'
 
 const Home: NextPage = (_props) => {
-  const t = useTranslations('Index')
-  const { locale, locales, route } = useRouter()
-
-  const otherLocale = locales?.find((cur) => cur !== locale)
-
   return (
     <>
       <Head>
@@ -31,13 +23,6 @@ const Home: NextPage = (_props) => {
       <div className={styles.Home__banner}>
         <VContainer>
           <IHome />
-          <p>
-            {otherLocale && (
-              <Link href={route} locale={otherLocale}>
-                <a>{t('switchLocale', { locale: otherLocale })}</a>
-              </Link>
-            )}
-          </p>
         </VContainer>
       </div>
 

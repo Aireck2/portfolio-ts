@@ -30,6 +30,8 @@
   }
 
   &__button {
+    display: flex;
+    align-items: center;
     background-color: $white;
     color: $not-quite-black;
     border-radius: $button-radius;
