@@ -23,7 +23,7 @@ const IContact = () => {
         <h2 className={styles.IContact__heading}>{t('getInTouch')}</h2>
         <p className={styles.IContact__subheading}>{t('contactDescription')}</p>
         <button className={styles.IContact__button}>
-          <a href={`mailto:${info.email}`} target="_blank">
+          <a href={`mailto:${info.email}`} target="_blank" rel="noreferrer">
             {t('sayHello')}
           </a>
         </button>
@@ -39,7 +39,7 @@ const IContact = () => {
 
             <span className={styles.IContact__github_stats__container}>
               <Fork />
-              <span>10</span>
+              <span>5</span>
             </span>
           </div>
         </a>
