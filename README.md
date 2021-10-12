@@ -116,11 +116,13 @@ features (and known issues).
 Contributions are what make the open source community such an amazing place to be learn, inspire,
 and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the Project
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/aireck2/portfolio-ts/compare/).
+
+<!-- 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+5. Open a Pull Request -->
 
 <!-- LICENSE -->
 
@@ -152,6 +154,8 @@ Project Link:
 - [Sticky Kit](http://leafo.net/sticky-kit)
 - [JVectorMap](http://jvectormap.com)
 - [Font Awesome](https://fontawesome.com)
+
+<!-- vercel -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
