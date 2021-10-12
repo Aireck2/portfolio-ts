@@ -1,3 +1,22 @@
 .VContainer {
   padding: 25px;
 }
+
+@media screen {
+  @media (min-width: 480px) {
+    .VContainer {
+      padding: 25px 50px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .VContainer {
+      padding: 25px 100px;
+    }
+  }
+  @media (min-width: 1080px) {
+    .VContainer {
+      padding: 25px 150px;
+    }
+  }
+}
