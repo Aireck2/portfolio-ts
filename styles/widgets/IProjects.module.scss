@@ -1,0 +1,212 @@
+@import '../vars.scss';
+
+.IProjects {
+  &__container {
+    max-width: 1000px;
+    margin: 100px auto;
+  }
+
+  &__inner {
+    &__container {
+      display: grid;
+      grid-gap: 10px;
+      align-items: center;
+      position: relative;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    &__image {
+      grid-area: 1 / 6 / -1 / -1;
+      grid-column: 1 / -1;
+      position: relative;
+      max-width: 700px;
+      height: 100%;
+      box-shadow: 0 10px 30px -15px var(--navy-shadow);
+      transition: $transition;
+      z-index: 1;
+      & a {
+        display: block;
+        position: relative;
+        border-radius: $border-radius;
+        background-color: $greyple;
+        z-index: 1;
+        height: 100%;
+        transition: $transition;
+        &:hover {
+          &::before {
+            background-color: transparent;
+          }
+
+          & img {
+            background-color: transparent;
+            filter: none;
+            mix-blend-mode: normal;
+          }
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          inset: 0px;
+          z-index: 3;
+          border-radius: $border-radius;
+          background-color: $not-quite-black;
+          mix-blend-mode: screen;
+        }
+
+        & > div {
+          height: 100%;
+
+          & img {
+            object-fit: cover;
+            border-radius: $border-radius;
+            mix-blend-mode: multiply;
+            filter: grayscale(100%) contrast(1) brightness(90%);
+          }
+        }
+      }
+    }
+    &__content {
+      grid-area: 1 / 1 / -1 / 7;
+      grid-column: 1 / -1;
+      padding: 25px 25px 20px;
+      text-align: left;
+
+      &__links {
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        justify-content: flex-end;
+        padding: 0px;
+        list-style: none;
+        position: relative;
+        z-index: 2;
+
+        a {
+          display: inline-block;
+          text-decoration: none;
+          color: inherit;
+          position: relative;
+          transition: $transition;
+          padding: 10px;
+
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+
+          &:hover,
+          &:focus {
+            transform: translateY(-3px);
+            color: $brand;
+          }
+        }
+      }
+
+      &__list {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        padding: 0;
+        grid-gap: 10px;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &__heading {
+    font-family: $font-display;
+    font-size: 32px;
+    color: $not-quite-black;
+    font-weight: 900;
+    margin: 0px 0px 40px;
+  }
+
+  &__subheading {
+    &__overline {
+      position: relative;
+      color: $brand;
+      z-index: 2;
+      margin-bottom: 10px;
+    }
+    &__title {
+      position: relative;
+      font-family: $font-display;
+      font-size: 20px;
+      font-weight: bold;
+      z-index: 2;
+      margin: 0px;
+    }
+  }
+
+  &__body {
+    font-family: $font-primary;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: $border-radius;
+    background-color: transparent;
+    color: $greyple;
+    transition: $transition;
+    box-shadow: 0 10px 30px -15px $not-quite-black;
+  }
+}
+
+@media screen {
+  @media (min-width: 480px) {
+    .IProjects {
+      &__inner {
+        &__content {
+          // padding: 40px 40px 30px;
+        }
+        &__image {
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .IProjects {
+      &__inner {
+        &__content {
+          grid-column: 5 / -1;
+          text-align: right;
+          padding: 0;
+        }
+        &__image {
+          grid-column: 1 / 8;
+          height: unset;
+        }
+      }
+      &__body {
+        background-color: $greyple;
+        color: $not-quite-black;
+      }
+    }
+  }
+
+  @media (min-width: 1080px) {
+    .IProjects {
+      &__inner {
+        &__content {
+          grid-column: 7 / -1;
+        }
+        &__image {
+          grid-column: 1 / 9;
+        }
+      }
+    }
+  }
+
+  // @media (max-width: 480px) .eeeRej:not(:last-of-type) {
+  //   margin-bottom: 30px;
+  // }
+
+  // @media (max-width: 768px) .eeeRej:not(:last-of-type) {
+  //   margin-bottom: 70px;
+  // }
+  // .eeeRej:not(:last-of-type) {
+  //   margin-bottom: 100px;
+  // }
+}
