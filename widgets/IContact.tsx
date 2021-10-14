@@ -44,6 +44,7 @@ const IContact = () => {
           </div>
         </a>
       </Link>
+      <p className={styles.IContact__body}>Copyright © 2021 All Rights Reserved</p>
     </div>
   )
 }
