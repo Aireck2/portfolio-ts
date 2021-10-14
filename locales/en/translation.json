@@ -3,6 +3,7 @@
         "about": "About",
         "experience": "Experience",
         "contact": "Contact",
+        "projects": "Projects",
         "resume": "Resume",
 
         "greet": "Hi, my name is",
@@ -21,8 +22,11 @@
         "jobDescription3": "I worked closely with the designers and the commercial team to develop, document and manage the website using Nextjs, css and TypeScript.",
         "jobDescription4": "Use APIʼs to connect the web application with various services and systems.",
 
+        "projectsTitle": "Some Things I’ve Built",
+
         "whatsNext": "What's next?",
-        "contactDescription": "Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+        "notcontactDescription": "Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+        "contactDescription": "Don't hesitate contacting me!",
         "sayHello": "Say Hello",
 
         "switchLocale": "Switch to {locale, select, es {Spanish} en {English} other {}}"
