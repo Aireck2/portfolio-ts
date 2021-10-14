@@ -20,6 +20,7 @@ const VMenu: NextPage = () => {
   const menuItems = [
     { name: t('about'), url: '#about' },
     { name: t('experience'), url: '#experience' },
+    { name: t('projects'), url: '#projects' },
     { name: t('contact'), url: '#contact' },
   ]
 
