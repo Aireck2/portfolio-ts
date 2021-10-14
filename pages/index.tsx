@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 
 import { VContainer, VMenu } from '../layouts'
-import { IAbout, IExperience, IHome, IContact, IEmail, ISocial } from '../widgets'
+import { IAbout, IExperience, IHome, IContact, IEmail, ISocial, IProjects } from '../widgets'
 
 import styles from '../styles/views/Home.module.scss'
 
@@ -34,6 +34,11 @@ const Home: NextPage = (_props) => {
       <div className={styles.Home__experience} id="experience">
         <VContainer>
           <IExperience />
+        </VContainer>
+      </div>
+      <div className={styles.Home__experience} id="projects">
+        <VContainer>
+          <IProjects />
         </VContainer>
       </div>
 
