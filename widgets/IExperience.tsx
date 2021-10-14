@@ -25,7 +25,7 @@ const IExperience = () => {
         {`${info.jobPosition} `}
         <span className={styles.IExperience__highlight}>
           @{' '}
-          <a href={info.companyWeb} target="_blank">
+          <a href={info.companyWeb} target="_blank" rel="noreferrer">
             {info.company}
           </a>
         </span>

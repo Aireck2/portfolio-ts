@@ -18,7 +18,7 @@ const IHome = () => {
       <h2 className={styles.IHome__heading}>{homeInfo.phrase}.</h2>
       <p className={styles.IHome__body}>{homeInfo.description}</p>
       <button className={styles.IHome__button}>
-        <a href={`mailto:${homeInfo.email}`} target="_blank">
+        <a href={`mailto:${homeInfo.email}`} target="_blank" rel="noreferrer">
           {t('getInTouch')}
         </a>
       </button>
