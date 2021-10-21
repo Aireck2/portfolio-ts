@@ -1,0 +1,141 @@
+@import '../vars.scss';
+
+.IOtherProjects {
+  &__container {
+    max-width: 1000px;
+    margin: 100px auto;
+  }
+  &__list__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    grid-gap: 15px;
+    & > li {
+      padding: 32px 28px;
+      border-radius: 2px;
+      box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: relative;
+    z-index: 2;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      transition: $transition;
+      padding: 10px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      &:hover,
+      &:focus {
+        transform: translateY(-3px);
+        color: $brand;
+      }
+    }
+  }
+  &__inner {
+    &__container {
+      display: grid;
+      grid-gap: 10px;
+      align-items: center;
+      position: relative;
+      grid-template-columns: repeat(12, 1fr);
+      box-shadow: 0 10px 30px -15px $not-quite-black;
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__content {
+      grid-area: 1 / 1 / -1 / 7;
+      grid-column: 1 / -1;
+      padding: 25px 25px 20px;
+      text-align: left;
+
+      &__list {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        padding: 0;
+        grid-gap: 10px;
+      }
+    }
+  }
+
+  &__heading {
+    font-family: $font-display;
+    font-size: 32px;
+    color: $not-quite-black;
+    font-weight: 900;
+    margin: 0px 0px 40px;
+    text-align: center;
+  }
+
+  &__subheading {
+    &__overline {
+      position: relative;
+      display: inline-block;
+      @include text-gradient;
+      z-index: 2;
+      margin-bottom: 10px;
+    }
+    &__title {
+      color: $not-quite-black;
+      position: relative;
+      font-family: $font-display;
+      font-size: 20px;
+      font-weight: bold;
+      z-index: 2;
+      margin: 0px;
+    }
+  }
+
+  &__body {
+    font-family: $font-primary;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+    padding: 15px 0;
+    border-radius: $border-radius;
+    background-color: transparent;
+    color: $gray-subtitle;
+    transition: $transition;
+  }
+}
+
+@media screen {
+  @media (min-width: 480px) {
+    .IOtherProjects {
+    }
+  }
+  @media (min-width: 768px) {
+    .IOtherProjects {
+    }
+  }
+
+  @media (min-width: 1080px) {
+    .IOtherProjects {
+    }
+  }
+}
