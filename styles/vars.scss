@@ -14,6 +14,8 @@ $not-quite-black-rgb: 35, 39, 42;
 $black: #000;
 $ekko-red: #de2761;
 
+$gray-subtitle: #555555;
+
 $button-hover: #36393f;
 
 // Fonts
@@ -34,17 +36,6 @@ $hamburger-width: 30px;
 
 $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 $border-radius: 4px;
-
-@media screen and (min-width: 768px) {
-  $num-grid-columns: 8;
-  $page-gutter: 40px;
-  $section-spacing: 80px;
-}
-
-@media screen and (min-width: 1024px) {
-  $num-grid-columns: 12;
-  $section-spacing: 120px;
-}
 
 @mixin text-gradient {
   background: linear-gradient(90deg, #f7b500 0.03%, #b620e0 48.96%, #32c5ff 99.97%);
