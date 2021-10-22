@@ -1,9 +1,9 @@
-import Github from '../public/icons/github.svg'
-import LinkedIn from '../public/icons/linkedin.svg'
-import Instagram from '../public/icons/instagram.svg'
-import CodePen from '../public/icons/codepen.svg'
+import Github from '@public/icons/github.svg'
+import LinkedIn from '@public/icons/linkedin.svg'
+import Instagram from '@public/icons/instagram.svg'
+import CodePen from '@public/icons/codepen.svg'
 
-import styles from '../styles/widgets/ISocial.module.scss'
+import styles from '@styles/widgets/ISocial.module.scss'
 
 const ISocial = () => {
   const socialArr = [

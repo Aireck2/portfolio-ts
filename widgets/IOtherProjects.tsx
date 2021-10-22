@@ -1,10 +1,10 @@
 import { useTranslations } from 'next-intl'
 
-import Github from '../public/icons/github.svg'
-import ExternalLink from '../public/icons/external.svg'
-import FolderIcon from '../public/icons/folder.svg'
+import Github from '@public/icons/github.svg'
+import ExternalLink from '@public/icons/external.svg'
+import FolderIcon from '@public/icons/folder.svg'
 
-import styles from '../styles/widgets/IOtherProjects.module.scss'
+import styles from '@styles/widgets/IOtherProjects.module.scss'
 
 const IOtherProjects = () => {
   const t = useTranslations('Index')

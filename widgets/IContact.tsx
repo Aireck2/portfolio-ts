@@ -1,9 +1,9 @@
 import { useTranslations } from 'next-intl'
-import Star from '../public/icons/star.svg'
-import Fork from '../public/icons/fork.svg'
+import Star from '@public/icons/star.svg'
+import Fork from '@public/icons/fork.svg'
 import Link from 'next/link'
 
-import styles from '../styles/widgets/IContact.module.scss'
+import styles from '@styles/widgets/IContact.module.scss'
 
 const IContact = () => {
   const t = useTranslations('Index')

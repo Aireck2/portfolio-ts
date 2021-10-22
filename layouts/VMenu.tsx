@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 
-import styles from '../styles/layouts/VMenu.module.scss'
+import styles from '@styles/layouts/VMenu.module.scss'
 
 const VMenu: NextPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

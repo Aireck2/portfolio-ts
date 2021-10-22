@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
-import styles from '../styles/widgets/IAbout.module.scss'
+import styles from '@styles/widgets/IAbout.module.scss'
 
 const IAbout = () => {
   const t = useTranslations('Index')
