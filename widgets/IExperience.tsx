@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl'
 
-import styles from '../styles/widgets/IExperience.module.scss'
+import styles from '@styles/widgets/IExperience.module.scss'
 
 const IExperience = () => {
   const t = useTranslations('Index')

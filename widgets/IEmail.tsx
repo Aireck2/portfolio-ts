@@ -1,4 +1,4 @@
-import styles from '../styles/widgets/ISocial.module.scss'
+import styles from '@styles/widgets/ISocial.module.scss'
 
 const IEmail = () => {
   const info = {
@@ -7,7 +7,7 @@ const IEmail = () => {
   return (
     <div className={styles.IEmail__container}>
       <div className={styles.IEmail__container__email}>
-        <a href={`mailto:${info.email}`} target="_blank">
+        <a href={`mailto:${info.email}`} target="_blank" rel="noreferrer">
           {info.email}
         </a>
       </div>

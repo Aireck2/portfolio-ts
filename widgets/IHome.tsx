@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl'
-import styles from '../styles/widgets/IHome.module.scss'
+
+import styles from '@styles/widgets/IHome.module.scss'
 
 const IHome = () => {
   const t = useTranslations('Index')
