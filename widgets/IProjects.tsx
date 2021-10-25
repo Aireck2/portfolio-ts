@@ -72,6 +72,7 @@ const IProjects = () => {
                 <Image
                   className="project-img"
                   src="/images/halcyon.png"
+                  priority={true}
                   alt="Project photo"
                   width={700}
                   height={438}
