@@ -15,6 +15,10 @@ const IContact = () => {
     githubRepo: 'https://github.com/Aireck2/portfolio-next',
     jobPosition: 'Front-end Developer',
     email: 'erickescribaa@gmail.com',
+    github: [
+      { icon: Star, url: 'https://github.com/Aireck2/portfolio-next' },
+      { icon: Fork, url: 'https://github.com/Aireck2/portfolio-next' },
+    ],
   }
   return (
     <div className={styles.IContact__container}>
@@ -28,23 +32,19 @@ const IContact = () => {
           </a>
         </button>
       </div>
-      <Link href={info.githubRepo}>
-        <a target="_blank" className={styles.IContact__link}>
-          <p className={styles.IContact__body}>Designed & Built by Erick Escriba</p>
-          <div className={styles.IContact__github_stats}>
-            <span className={styles.IContact__github_stats__container}>
-              <Star />
-              <span>3</span>
-            </span>
-
-            <span className={styles.IContact__github_stats__container}>
-              <Fork />
-              <span>5</span>
-            </span>
-          </div>
-        </a>
-      </Link>
-      <p className={styles.IContact__body}>Copyright © 2021 All Rights Reserved</p>
+      <ul className={styles.IContact__github_stats}>
+        {info.github.map((item, index) => (
+          <li key={index} className={styles.IContact__link}>
+            <a href={`${item.url}`} target="_blank" rel="noreferrer">
+              <span className={styles.IContact__github_stats__container}>
+                <item.icon />
+                <span>3</span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p className={styles.IContact__body}> 2021 © Erick Escriba - Take it easy</p>
     </div>
   )
 }

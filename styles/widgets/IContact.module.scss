@@ -10,55 +10,71 @@
   }
 
   &__heading {
-    color: $brand;
+    color: $black;
     font-family: $font-headline;
     font-weight: 800;
     line-height: 95%;
     text-transform: uppercase;
     font-size: 32px;
-    text-rendering: geometricPrecision;
   }
+
   &__subheading {
     margin-bottom: 50px;
     font-family: $font-primary;
-    color: $off-white;
+    color: $dark-not-black;
 
     line-height: 32px;
     font-size: clamp(16px, 2vw, 20px);
     &_highlight {
-      color: $greyple;
+      @include text-gradient;
+      display: inline-block;
     }
   }
 
-  &__body {
-    font-family: $font-primary;
-    color: $greyple;
-  }
   &__button {
-    background-color: $white;
-    color: $not-quite-black;
-    border-radius: $button-radius;
-    font-size: 20px;
-    outline: none;
+    position: relative;
+    display: inline-block;
+    padding: 13px 30px;
+    border-radius: 10px;
+    background-color: $theme-white;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
     font-family: $font-primary;
-    padding: 12px 28px;
+    font-size: 18px;
     cursor: pointer;
-    border: none;
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
+    color: $dark-not-black;
+    border: 0;
 
-    &:hover {
-      color: $brand;
-      box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    &::after {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      height: calc(100% + 4px);
+      width: calc(100% + 4px);
+      background: linear-gradient(90deg, #f7b500, #b620e0, #32c5ff);
+      border-radius: 12px;
+      z-index: -1;
+      transition: all 300ms ease;
+      opacity: 0.7;
     }
+    &:hover {
+      &::after {
+        filter: blur(3px);
+        opacity: 1;
+      }
+    }
+  }
+  &__body {
+    color: $gray-3;
   }
   &__github_stats {
-    color: $greyple;
+    color: $dark-not-black;
     max-width: 600px;
     margin: auto;
     display: flex;
     justify-content: center;
+    grid-gap: 10px;
     &__container {
       display: grid;
       grid-template-columns: 1fr 1fr;

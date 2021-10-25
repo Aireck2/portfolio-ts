@@ -7,11 +7,7 @@ const IAbout = () => {
   const t = useTranslations('Index')
 
   const info = {
-    description: [
-      t('description1'),
-      t('description2'),
-      t('description3'),
-    ],
+    description: [t('description1'), t('description2'), t('description3')],
     skills: [
       'Typescript',
       'React',
@@ -47,7 +43,13 @@ const IAbout = () => {
 
         <div className={styles.IAbout__photo_container}>
           <div className={styles.IAbout__photo__wrapper}>
-            <Image src="/images/photo.png" alt="Erick Logo" width={400} height={400} />
+            <Image
+              src="/images/photo.png"
+              alt="Erick Logo"
+              width={400}
+              height={400}
+              priority={true}
+            />
           </div>
         </div>
       </div>
