@@ -66,7 +66,7 @@ const IOtherProjects = () => {
             <div className={styles.IOtherProjects__inner__content__description}>
               <p className={styles.IOtherProjects__subheading__title}>{project.name}</p>
               <p className={styles.IOtherProjects__body}>{project.description}</p>
-              <ul className={styles.IOtherProjects__inner__content__list}>
+              <ul className={styles.IOtherProjects__list}>
                 {project.technologies.map((tech, index) => (
                   <li key={index}>{tech}</li>
                 ))}
