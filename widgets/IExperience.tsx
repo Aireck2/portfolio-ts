@@ -30,7 +30,7 @@ const IExperience = () => {
           </a>
         </span>
       </p>
-      <span className={styles.IExperience__body}>{t('jobDate1')}</span>
+      <p className={styles.IExperience__body}>{t('jobDate1')}</p>
       <ul className={styles.IExperience__skill_list}>
         {info.jobDescription.map((job, index) => (
           <li key={index} className={styles.IExperience__skill_item}>
