@@ -1,0 +1,35 @@
+@import '../vars.scss';
+
+.QIconLink {
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: $transition;
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-3px);
+    color: $brand;
+  }
+  &__text {
+    margin-left: 10px;
+  }
+  &__default {
+    font-size: 20px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__small {
+    font-size: 14px;
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
