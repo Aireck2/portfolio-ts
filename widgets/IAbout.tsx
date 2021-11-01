@@ -1,6 +1,8 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
+import QList from '@components/QList'
+
 import styles from '@styles/widgets/IAbout.module.scss'
 
 const IAbout = () => {
@@ -32,13 +34,7 @@ const IAbout = () => {
               {description}
             </p>
           ))}
-          <ul className={styles.IAbout__skill_list}>
-            {info.skills.map((skill, index) => (
-              <li key={index} className={styles.IAbout__skill_item}>
-                {skill}
-              </li>
-            ))}
-          </ul>
+          <QList arr={info.skills} column={2} />
         </div>
 
         <div className={styles.IAbout__photo_container}>
