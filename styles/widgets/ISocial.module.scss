@@ -67,28 +67,6 @@
       align-items: center;
       margin: 0px;
       padding: 0px;
-      list-style: none;
-
-      a {
-        display: inline-block;
-        text-decoration: none;
-        text-decoration-skip-ink: auto;
-        color: inherit;
-        position: relative;
-        transition: $transition;
-        padding: 10px;
-
-        svg {
-          width: 20px;
-          height: 20px;
-        }
-
-        &:hover,
-        &:focus {
-          transform: translateY(-3px);
-          color: $brand;
-        }
-      }
 
       &::after {
         content: '';

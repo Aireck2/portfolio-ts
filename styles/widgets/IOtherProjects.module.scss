@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    svg {
+    & > svg {
       width: 40px;
       height: 40px;
     }
@@ -40,26 +40,6 @@
     list-style: none;
     position: relative;
     z-index: 2;
-
-    a {
-      display: inline-block;
-      text-decoration: none;
-      color: inherit;
-      position: relative;
-      transition: $transition;
-      padding: 10px;
-
-      svg {
-        width: 20px;
-        height: 20px;
-      }
-
-      &:hover,
-      &:focus {
-        transform: translateY(-3px);
-        color: $brand;
-      }
-    }
   }
 
   &__heading {

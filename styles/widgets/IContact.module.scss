@@ -75,30 +75,5 @@
     display: flex;
     justify-content: center;
     grid-gap: 10px;
-    &__container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      font-size: 14px;
-      & svg {
-        margin-right: 5px;
-        width: 14px;
-        height: 14px;
-      }
-    }
-    span {
-      & + span {
-        margin-left: 20px;
-      }
-    }
-  }
-  &__link {
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    &:hover p,
-    &:hover span {
-      color: $brand;
-    }
   }
 }
