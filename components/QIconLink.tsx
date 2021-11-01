@@ -11,6 +11,7 @@ import Loader from '@public/icons/loader.svg'
 import PlayStore from '@public/icons/playstore.svg'
 import Star from '@public/icons/star.svg'
 import Twitter from '@public/icons/twitter.svg'
+
 import styles from '@styles/components/QIconLink.module.scss'
 
 interface IProps {
