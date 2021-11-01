@@ -20,8 +20,9 @@
 
   &__body {
     font-family: $font-primary;
-    color: $greyple;
+    color: $dark-not-black;
     font-size: 16px;
+    margin: 10px 0;
   }
 
   &__skill {
@@ -44,20 +45,24 @@
         top: 50%;
         transform: translate(0, -50%);
         left: 0px;
-        color: $brand;
+        // color: $brand-new;
+        @include text-gradient;
         line-height: 12px;
       }
     }
   }
 
   &__highlight {
-    color: $brand;
+    // color: $brand;
+    @include text-gradient;
     a {
       display: inline-block;
       text-decoration: none;
       text-decoration-skip-ink: auto;
       position: relative;
       transition: $transition;
+      @include text-gradient;
+      // border-image: linear-gradient(to right,var(--gradient-color-0),var(--gradient-color-1)) 1;
       &:hover::after {
         width: 100%;
       }
@@ -68,7 +73,7 @@
         height: 2px;
         position: relative;
         bottom: 0;
-        background-color: $brand;
+        background: $background-gradient;
         transition: $transition;
         opacity: 0.5;
       }
