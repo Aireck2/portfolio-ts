@@ -43,9 +43,11 @@ $hamburger-width: 30px;
 
 $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 $border-radius: 4px;
+$background-gradient: linear-gradient(90deg, #f7b500 0.03%, #b620e0 48.96%, #32c5ff 99.97%);
+$brand-new: #844fba;
 
 @mixin text-gradient {
-  background: linear-gradient(90deg, #f7b500 0.03%, #b620e0 48.96%, #32c5ff 99.97%);
+  background: $background-gradient;
   background-clip: text;
   color: transparent;
 }
