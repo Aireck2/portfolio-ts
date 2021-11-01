@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl'
 
-import Github from '@public/icons/github.svg'
-import ExternalLink from '@public/icons/external.svg'
+import QIconLink from '@components/QIconLink'
 import FolderIcon from '@public/icons/folder.svg'
 
 import styles from '@styles/widgets/IOtherProjects.module.scss'
@@ -17,8 +16,8 @@ const IOtherProjects = () => {
               nisi eveniet aspernatur accusantium ipsa adipisci delectus`,
       technologies: ['VS Code', 'Atom', 'Atom'],
       links: [
-        { icon: Github, url: 'https://github.com/Aireck2' },
-        { icon: ExternalLink, url: 'https://codepen.io/Aireck' },
+        { type: 'github' as const, url: 'https://github.com/Aireck2' },
+        { type: 'externalLink' as const, url: 'https://codepen.io/Aireck' },
       ],
     },
     {
@@ -28,8 +27,8 @@ const IOtherProjects = () => {
               nisi eveniet aspernatur accusantium ipsa adipisci delectus`,
       technologies: ['VS Code', 'Atom', 'Atom'],
       links: [
-        { icon: Github, url: 'https://github.com/Aireck2' },
-        { icon: ExternalLink, url: 'https://codepen.io/Aireck' },
+        { type: 'github' as const, url: 'https://github.com/Aireck2' },
+        { type: 'externalLink' as const, url: 'https://codepen.io/Aireck' },
       ],
     },
     {
@@ -39,8 +38,8 @@ const IOtherProjects = () => {
               nisi eveniet aspernatur accusantium ipsa adipisci delectus`,
       technologies: ['VS Code', 'Atom', 'Atom'],
       links: [
-        { icon: Github, url: 'https://github.com/Aireck2' },
-        { icon: ExternalLink, url: 'https://codepen.io/Aireck' },
+        { type: 'github' as const, url: 'https://github.com/Aireck2' },
+        { type: 'externalLink' as const, url: 'https://codepen.io/Aireck' },
       ],
     },
   ]
@@ -56,9 +55,7 @@ const IOtherProjects = () => {
               <ul className={styles.IOtherProjects__links}>
                 {project.links.map((link, index) => (
                   <li key={index}>
-                    <a href={`${link.url}`} target="_blank" rel="noreferrer">
-                      <link.icon />
-                    </a>
+                    <QIconLink type={link.type} url={link.url} />
                   </li>
                 ))}
               </ul>

@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl'
-import Star from '@public/icons/star.svg'
-import Fork from '@public/icons/fork.svg'
-import Link from 'next/link'
+
+import QIconLink from '@components/QIconLink'
 
 import styles from '@styles/widgets/IContact.module.scss'
 
@@ -9,17 +8,14 @@ const IContact = () => {
   const t = useTranslations('Index')
 
   const info = {
-    name: 'Erick Escriba',
-    company: 'EquipIndustry',
-    companyWeb: 'http://equipindustry.com',
     githubRepo: 'https://github.com/Aireck2/portfolio-next',
-    jobPosition: 'Front-end Developer',
     email: 'erickescribaa@gmail.com',
     github: [
-      { icon: Star, url: 'https://github.com/Aireck2/portfolio-next' },
-      { icon: Fork, url: 'https://github.com/Aireck2/portfolio-next' },
+      { type: 'star' as const, url: 'https://github.com/Aireck2/portfolio-next' },
+      { type: 'fork' as const, url: 'https://github.com/Aireck2/portfolio-next' },
     ],
   }
+
   return (
     <div className={styles.IContact__container}>
       <div className={styles.IContact__container_contact}>
@@ -34,17 +30,12 @@ const IContact = () => {
       </div>
       <ul className={styles.IContact__github_stats}>
         {info.github.map((item, index) => (
-          <li key={index} className={styles.IContact__link}>
-            <a href={`${item.url}`} target="_blank" rel="noreferrer">
-              <span className={styles.IContact__github_stats__container}>
-                <item.icon />
-                <span>3</span>
-              </span>
-            </a>
+          <li key={index}>
+            <QIconLink type={item.type} url={item.url} size="small" text="3" />
           </li>
         ))}
       </ul>
-      <p className={styles.IContact__body}> 2021 © Erick Escriba - Take it easy</p>
+      <p className={styles.IContact__body}> 2021 © Erick Escriba - Have 365 Nice days</p>
     </div>
   )
 }
