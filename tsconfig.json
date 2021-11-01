@@ -23,6 +23,7 @@
       "@layouts/*": ["layouts/*"],
       "@locales/*": ["locales/*"],
       "@public/*": ["public/*"]
-    }
+    },
+    "incremental": true
   }
 }
