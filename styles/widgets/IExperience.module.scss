@@ -25,35 +25,7 @@
     margin: 10px 0;
   }
 
-  &__skill {
-    &_list {
-      padding: 0;
-      display: grid;
-      grid-template-columns: 1fr;
-      font-size: clamp(16px, 2vw, 20px);
-      line-height: 22px;
-    }
-    &_item {
-      position: relative;
-      margin-bottom: 10px;
-      padding-left: 20px;
-      font-size: 16px;
-
-      &::before {
-        content: '▹';
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
-        left: 0px;
-        // color: $brand-new;
-        @include text-gradient;
-        line-height: 12px;
-      }
-    }
-  }
-
   &__highlight {
-    // color: $brand;
     @include text-gradient;
     a {
       display: inline-block;
@@ -62,7 +34,6 @@
       position: relative;
       transition: $transition;
       @include text-gradient;
-      // border-image: linear-gradient(to right,var(--gradient-color-0),var(--gradient-color-1)) 1;
       &:hover::after {
         width: 100%;
       }
