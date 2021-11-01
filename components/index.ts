@@ -1,3 +1,4 @@
-import QButton from "./QButton";
+import QButton from './QButton'
+import QIconLink from './QIconLink'
 
-export { QButton };
+export { QButton, QIconLink }
