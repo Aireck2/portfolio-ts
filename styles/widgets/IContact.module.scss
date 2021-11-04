@@ -11,8 +11,8 @@
 
   &__heading {
     color: $black;
-    font-family: $font-headline;
-    font-weight: 800;
+    font-family: $font-display;
+    font-weight: 900;
     line-height: 95%;
     text-transform: uppercase;
     font-size: 32px;
@@ -20,7 +20,7 @@
 
   &__subheading {
     margin-bottom: 50px;
-    font-family: $font-primary;
+    font-family: $font-body;
     color: $dark-not-black;
 
     line-height: 32px;
@@ -39,7 +39,7 @@
     background-color: $theme-white;
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
-    font-family: $font-primary;
+    font-family: $font-body;
     font-size: 18px;
     cursor: pointer;
     color: $dark-not-black;

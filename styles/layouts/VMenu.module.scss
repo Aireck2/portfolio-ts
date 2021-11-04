@@ -3,7 +3,7 @@
 .VMenu {
   &__background {
     padding: 27px 25px;
-    background-color: $brand;
+    // background-color: $brand;
   }
 
   &__container {
@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     grid-gap: 40px;
-    font-family: $font-primary;
+    font-family: $font-body;
     & li > a:hover {
       text-decoration: underline;
     }
@@ -37,7 +37,7 @@
     border-radius: $button-radius;
     font-size: 16px;
     outline: none;
-    font-family: $font-primary;
+    font-family: $font-body;
     padding: 8px 16px;
     cursor: pointer;
     border: none;
@@ -47,7 +47,7 @@
   }
 
   &__button:hover {
-    color: $brand;
+    color: $brand-new;
     box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
   }
 }
