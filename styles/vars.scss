@@ -26,12 +26,15 @@ $button-hover: #36393f;
 $theme-white: #f6f6f6;
 
 // Fonts
-$font-primary: 'Whitney', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$font-display: 'Ginto Normal', 'Whitney', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$font-headline: 'Ginto Nord', 'Whitney', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+// $font-primary: 'Whitney', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+// $font-display: 'Ginto Normal', 'Whitney', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-display: 'Gilmer', Geneva, Tahoma, Helvetica, Verdana, sans-serif;
+// $font-headline: 'Ginto Nord', 'Whitney', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-body: 'Metro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, 'Helvetica Neue', sans-serif;
 $font-monospace: 'Menlo', 'Consolas', 'Monaco', monospace;
-$font-glitch: 'ArchivoBlack', 'Whitney', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$font-cursive: 'Reenie Beanie', 'Comic Sans MS', cursive, sans-serif;
+// $font-glitch: 'ArchivoBlack', 'Whitney', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+// $font-cursive: 'Reenie Beanie', 'Comic Sans MS', cursive, sans-serif;
 
 // General space/grid
 $page-max-width: 1260px;
