@@ -1,9 +1,9 @@
 @import '../vars.scss';
 
 %shared-font-display {
-  font-family: $font-display;
+  font-family: $font-body;
   max-width: 500px;
-  color: $white;
+  color: $gray-2;
   font-size: clamp(15px, 0.6403rem + 1.2702vw, 20px);
 }
 
@@ -14,10 +14,10 @@
   }
 
   &__heading {
-    font-family: $font-headline;
-    // font-size: clamp(30px, -0.2831rem + 9.2081vw, 56px);
+    font-family: $font-display;
+    font-weight: 900;
     font-size: clamp(1.875rem, 0.8678rem + 4.2975vw, 3.5rem);
-    color: $white;
+    color: $not-quite-black;
   }
 
   &__body {
@@ -25,7 +25,6 @@
 
     &__brand {
       @extend %shared-font-display;
-      color: $white;
       font-weight: normal;
     }
   }
@@ -36,7 +35,7 @@
     border-radius: $button-radius;
     font-size: 20px;
     outline: none;
-    font-family: $font-primary;
+    font-family: $font-body;
     padding: 16px 32px;
     cursor: pointer;
     border: none;
@@ -48,13 +47,5 @@
       background-color: $button-hover;
       box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
     }
-  }
-
-  &__background {
-    background-color: $brand;
-    padding: 75px 0;
-    background-image: url('/images/background.svg');
-    background-position: bottom;
-    background-repeat: no-repeat;
   }
 }
