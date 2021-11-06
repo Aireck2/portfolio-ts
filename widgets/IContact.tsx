@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl'
 
-import QIconLink from '@components/QIconLink'
+import { QButton, QIconLink } from '@components/index'
 
 import styles from '@styles/widgets/IContact.module.scss'
 
@@ -22,11 +22,8 @@ const IContact = () => {
         <p className={styles.IContact__subheading_highlight}>{t('whatsNext')}</p>
         <h2 className={styles.IContact__heading}>{t('getInTouch')}</h2>
         <p className={styles.IContact__subheading}>{t('contactDescription')}</p>
-        <button className={styles.IContact__button}>
-          <a href={`mailto:${info.email}`} target="_blank" rel="noreferrer">
-            {t('sayHello')}
-          </a>
-        </button>
+
+        <QButton href={`mailto:${info.email}`} text={t('sayHello')} />
       </div>
       <ul className={styles.IContact__github_stats}>
         {info.github.map((item, index) => (
