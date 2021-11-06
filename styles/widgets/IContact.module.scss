@@ -31,40 +31,6 @@
     }
   }
 
-  &__button {
-    position: relative;
-    display: inline-block;
-    padding: 13px 30px;
-    border-radius: 10px;
-    background-color: $theme-white;
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
-    font-family: $font-body;
-    font-size: 18px;
-    cursor: pointer;
-    color: $dark-not-black;
-    border: 0;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      height: calc(100% + 4px);
-      width: calc(100% + 4px);
-      background: linear-gradient(90deg, #f7b500, #b620e0, #32c5ff);
-      border-radius: 12px;
-      z-index: -1;
-      transition: all 300ms ease;
-      opacity: 0.7;
-    }
-    &:hover {
-      &::after {
-        filter: blur(3px);
-        opacity: 1;
-      }
-    }
-  }
   &__body {
     color: $gray-3;
   }
