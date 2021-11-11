@@ -54,3 +54,15 @@ $brand-new: #844fba;
   background-clip: text;
   color: transparent;
 }
+
+@mixin nav-link-1 {
+  background: linear-gradient(to right, #f7b500 0%, #b620e0 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin nav-link-2 {
+  background: linear-gradient(to right, #32c5ff 0%, #b620e0 100%);
+  background-clip: text;
+  color: transparent;
+}

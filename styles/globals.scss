@@ -47,7 +47,6 @@ main {
 }
 
 .Aside {
-  // @include flexCenter;
   display: flex;
   position: fixed;
   top: 0;
@@ -58,9 +57,9 @@ main {
   max-width: 400px;
   height: 100vh;
   outline: 0;
-  background-color: $not-quite-black;
-  // box-shadow: -10px 0px 30px -15px $navy-shadow;
-  z-index: 9;
+  background-color: $gray-6;
+  box-shadow: -10px 0px 30px -15px $gray-4;
+  z-index: 30;
   transform: translateX(100vw);
   visibility: hidden;
   transition: $transition;
@@ -70,8 +69,6 @@ main {
   }
   nav {
     width: 100%;
-    // color: $lightest-slate;
-    // font-family: $font-mono;
     text-align: center;
   }
   ul {
@@ -84,27 +81,20 @@ main {
     li {
       position: relative;
       margin: 0 auto 20px;
-      // counter-increment: item 1;
-      // font-size: clamp($fz-sm, 4vw, $fz-lg);
       @media (max-width: 600px) {
         margin: 0 auto 10px;
       }
       &:before {
-        // content: '0' counter(item) '.';
         display: block;
         margin-bottom: 5px;
-        // color: $green;
-        // font-size: $fz-sm;
       }
     }
     a {
-      // @include link;
       width: 100%;
       padding: 3px 20px 3px;
     }
   }
   .resume-link {
-    // @include bigButton;
     padding: 18px 50px;
     margin: 10% auto 0;
     width: max-content;
@@ -112,11 +102,10 @@ main {
 }
 
 .MenuIcon {
-  // @include flexCenter;
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: 10;
+  z-index: 50;
   margin-right: -15px;
   padding: 15px;
   border: 0;
@@ -126,6 +115,7 @@ main {
   transition-timing-function: linear;
   transition-duration: 0.15s;
   transition-property: opacity, filter;
+  cursor: pointer;
 
   &.active .ham-box-inner {
     transition-delay: 0.12s;
@@ -147,7 +137,7 @@ main {
     width: $hamburger-width;
     height: 2px;
     border-radius: $border-radius;
-    background-color: $white;
+    background-color: $not-quite-black;
     transition-duration: 0.22s;
     transition-property: transform;
     transition-delay: 0s;
@@ -163,7 +153,7 @@ main {
       width: $hamburger-width;
       height: 2px;
       border-radius: 4px;
-      background-color: $white;
+      background-color: $not-quite-black;
       transition-timing-function: ease;
       transition-duration: 0.15s;
       transition-property: transform;
@@ -185,13 +175,11 @@ main {
     width: 100%;
     top: 0;
     opacity: 0;
-    // transition: $ham-before-active;
   }
   &.active .ham-box-inner::after {
     width: 100%;
     bottom: 0;
     transform: rotate(-90deg);
-    // transition: $ham-after-active;
   }
 }
 
