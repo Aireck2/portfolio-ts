@@ -42,8 +42,10 @@ const IProjects = () => {
             <div className={styles.IProjects__inner__content}>
               <div>
                 <div className={styles.IProjects__inner__content__description}>
-                  <p className={styles.IProjects__subheading__overline}>Featured Project</p>
-                  <p className={styles.IProjects__subheading__title}>{`Halcyon Theme`}</p>
+                  <div className={styles.IProjects__subheading__container}>
+                    <p className={styles.IProjects__subheading__overline}>Featured Project</p>
+                    <p className={styles.IProjects__subheading__title}>{`Halcyon Theme`}</p>
+                  </div>
                   <p className={styles.IProjects__body}>
                     {`Halcyon Theme Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Aut non aliquid nesciunt repudiandae? Ad repellendus, blanditiis perspiciatis,
