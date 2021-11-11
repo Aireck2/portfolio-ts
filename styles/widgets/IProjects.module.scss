@@ -26,13 +26,13 @@
       height: 100%;
       filter: grayscale(100%) contrast(1) brightness(50%);
       transition: $transition;
-      z-index: 1;
+      z-index: 30;
       & a {
         display: block;
         position: relative;
         border-radius: $border-radius;
         background-color: $greyple;
-        z-index: 1;
+        z-index: 30;
         height: 100%;
         transition: $transition;
 
@@ -42,14 +42,14 @@
           width: 100%;
           height: 100%;
           inset: 0px;
-          z-index: 3;
+          z-index: 30;
           border-radius: $border-radius;
           background-color: $not-quite-black;
           mix-blend-mode: screen;
         }
 
-        & > div {
-          height: 100%;
+        & > span {
+          height: 100% !important;
 
           & img {
             object-fit: cover;
@@ -73,7 +73,8 @@
         padding: 0px;
         list-style: none;
         position: relative;
-        z-index: 2;
+        z-index: 40;
+        color: $white;
 
         a {
           display: inline-block;
@@ -98,7 +99,8 @@
 
       &__list {
         position: relative;
-        z-index: 2;
+        z-index: 40;
+        color: $white;
         display: flex;
         padding: 0;
         grid-gap: 10px;
@@ -115,11 +117,17 @@
   }
 
   &__subheading {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      // align-items: flex-end;
+    }
+
     &__overline {
       position: relative;
       display: inline-block;
       @include text-gradient;
-      z-index: 2;
+      z-index: 40;
       margin-bottom: 10px;
     }
     &__title {
@@ -128,7 +136,8 @@
       font-family: $font-display;
       font-size: 20px;
       font-weight: bold;
-      z-index: 2;
+      z-index: 40;
+      display: inline-block;
       margin: 0px;
     }
   }
@@ -137,13 +146,23 @@
     font-family: $font-body;
     font-size: 16px;
     position: relative;
-    z-index: 2;
+    z-index: 40;
     padding: 20px 0;
     border-radius: $border-radius;
     background-color: transparent;
     color: $white;
     transition: $transition;
     box-shadow: 0 10px 30px -15px $not-quite-black;
+  }
+}
+.IProjects__inner__container {
+  &:nth-of-type(2n + 1) {
+    .IProjects__subheading__container {
+      align-items: flex-start;
+    }
+  }
+  .IProjects__subheading__container {
+    align-items: flex-start;
   }
 }
 
@@ -169,6 +188,9 @@
           }
 
           &:nth-of-type(2n + 1) {
+            .IProjects__subheading__container {
+              align-items: flex-end;
+            }
             & div:first-child {
               text-align: right;
               grid-column: 5 / -1;
@@ -185,6 +207,13 @@
           grid-area: 1 / 1 / -1 / 7;
           grid-column: 1 / 9;
           padding: 0;
+
+          &__links {
+            color: $not-quite-black;
+          }
+          &__list {
+            color: $not-quite-black;
+          }
         }
         &__image {
           grid-area: 1 / 6 / -1 / -1;
