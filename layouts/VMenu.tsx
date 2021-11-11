@@ -65,14 +65,14 @@ const VMenu: NextPage = () => {
 
   return (
     <div className={styles.VMenu__background}>
-      <div className={styles.VMenu__container}>
-        <h1>
+      <nav className={styles.VMenu__container}>
+        <h3>
           <Link href="/">
             <a>
               <Image src="/logos/logo.svg" alt="Erick Logo" width={34} height={34} />
             </a>
           </Link>
-        </h1>
+        </h3>
         <div className={styles.VMenu__container__wrapper}>{menu}</div>
         <button
           type="button"
@@ -84,7 +84,7 @@ const VMenu: NextPage = () => {
           </div>
         </button>
         <aside className={`Aside${isMenuOpen ? ' active' : ''}`}>{menu}</aside>
-      </div>
+      </nav>
     </div>
   )
 }
