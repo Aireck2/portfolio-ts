@@ -67,76 +67,69 @@ const Home: NextPage = (_props) => {
       <Particles
         id="tsparticles"
         options={{
+          fullScreen: {
+            enable: true,
+            zIndex: 100,
+          },
           fpsLimit: 60,
-          interactivity: {
-            events: {
-              onClick: {
+          particles: {
+            number: {
+              value: 0,
+            },
+            color: {
+              value: '#ff0000',
+              animation: {
                 enable: true,
-                mode: 'bubble',
+                speed: 180,
+                sync: true,
               },
-              onHover: {
+            },
+            shape: {
+              type: 'circle',
+            },
+            opacity: {
+              value: 1,
+            },
+            size: {
+              value: { min: 1, max: 5 },
+              animation: {
                 enable: true,
-                mode: 'grab',
+                speed: 5,
+                minimumValue: 1,
+                sync: true,
+                startValue: 'min',
+                count: 1,
+              },
+            },
+            move: {
+              enable: true,
+              speed: { min: 10, max: 20 },
+              direction: 'top',
+              random: false,
+              straight: false,
+              outMode: 'bounce-horizontal',
+              gravity: {
+                enable: true,
+              },
+            },
+          },
+          interactivity: {
+            detectsOn: 'window',
+            events: {
+              onclick: {
+                enable: true,
+                mode: 'trail',
               },
               resize: true,
             },
             modes: {
-              bubble: {
-                distance: 400,
-                duration: 2,
-                opacity: 0.8,
-                size: 20,
-              },
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
+              trail: {
+                delay: 0.1,
+                quantity: 1,
               },
             },
           },
-          particles: {
-            color: {
-              value: '#1d1e1f',
-            },
-            links: {
-              color: '#bfbfc0',
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: 'none',
-              enable: true,
-              outMode: 'bounce',
-              random: false,
-              speed: 0.5,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                value_area: 800,
-              },
-              value: 30,
-            },
-            opacity: {
-              value: 0.2,
-            },
-            shape: {
-              type: 'round',
-            },
-            size: {
-              random: true,
-              value: 5,
-            },
-          },
-          detectRetina: true,
+          retina_detect: true,
         }}
       />
     </>
