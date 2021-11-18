@@ -34,6 +34,14 @@
   &__body {
     color: $gray-3;
   }
+  &__social {
+    color: $dark-not-black;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    grid-gap: 10px;
+  }
   &__github_stats {
     color: $dark-not-black;
     max-width: 600px;
@@ -41,5 +49,15 @@
     display: flex;
     justify-content: center;
     grid-gap: 10px;
+  }
+}
+
+@media screen {
+  @media (min-width: 768px) {
+    .IContact {
+      &__social {
+        display: none;
+      }
+    }
   }
 }
