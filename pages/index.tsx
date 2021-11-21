@@ -26,7 +26,7 @@ const Home: NextPage = (_props) => {
         <meta name="description" content={'Erick Escriba Arango Portfolio Website'} />
         <meta property="og:title" content={'Erick Escriba Arango Portfolio'} />
         <meta name="keywords" content={'Erick EA'} />
-        <link rel="icon" href="/logos/logo.svg" />
+        <link rel="icon" href="/logos/logo-white.svg" />
       </Head>
       <header>
         <VMenu />
