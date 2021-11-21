@@ -24,14 +24,13 @@
       position: relative;
       max-width: 700px;
       height: 100%;
-      filter: grayscale(100%) contrast(1) brightness(50%);
+      filter: grayscale(100%) contrast(1) brightness(20%);
       transition: $transition;
       z-index: 30;
       & a {
         display: block;
         position: relative;
         border-radius: $border-radius;
-        background-color: $greyple;
         z-index: 30;
         height: 100%;
         transition: $transition;
@@ -44,7 +43,6 @@
           inset: 0px;
           z-index: 30;
           border-radius: $border-radius;
-          background-color: $not-quite-black;
           mix-blend-mode: screen;
         }
 
@@ -54,7 +52,7 @@
           & img {
             object-fit: cover;
             border-radius: $border-radius;
-            mix-blend-mode: multiply;
+            // mix-blend-mode: multiply;
             filter: grayscale(100%) contrast(1) brightness(90%);
           }
         }
@@ -210,17 +208,20 @@
 
           &__links {
             color: $not-quite-black;
+            z-index: 1;
           }
           &__list {
             color: $not-quite-black;
+            z-index: 1;
           }
         }
         &__image {
           grid-area: 1 / 6 / -1 / -1;
           height: unset;
-          filter: none;
-          & a {
-            &:hover {
+          filter: grayscale(100%) contrast(1) brightness(40%);
+          &:hover {
+            filter: none;
+            & a {
               &::before {
                 background-color: transparent;
               }
@@ -263,12 +264,6 @@
               grid-column: 1 / 8;
             }
           }
-        }
-        &__content {
-          // grid-column: 7 / -1;
-        }
-        &__image {
-          // grid-column: 1 / 9;
         }
       }
     }
