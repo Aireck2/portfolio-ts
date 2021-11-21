@@ -5,6 +5,21 @@ body {
   margin: 0;
   font-family: $font-body;
 }
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: $off-white;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $gray-4;
+  border: 3px solid $off-white;
+  border-radius: 10px;
+}
+::selection {
+  background-color: $dark-not-black;
+  color: $white;
+}
 h1,
 h2,
 h3,
