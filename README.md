@@ -56,7 +56,10 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][(./public/images/portfolio-bg.png)](https://example.com) -->
+ <a href="https://erickescriba.vercel.app/">
+    <img src="public/images/portfolio-bg.png" alt="Logo" width="800" height="400">
+  </a>
 
 The main purpose of this project is to show a collection of evidence, which not only summarizes my work, but also explains my individual learning processes.
 ### Built With
@@ -144,17 +147,16 @@ Project Link:
 
 ## Acknowledgements
 
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Pages](https://pages.github.com)
-- [Animate.css](https://daneden.github.io/animate.css)
-- [Loaders.css](https://connoratherton.com/loaders)
-- [Slick Carousel](https://kenwheeler.github.io/slick)
-- [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-- [Sticky Kit](http://leafo.net/sticky-kit)
-- [JVectorMap](http://jvectormap.com)
+- [Vercel](https://pages.github.com)
+- [Particlesjs](https://particles.js.org/)
 - [Font Awesome](https://fontawesome.com)
+<!-- - [Loaders.css](https://connoratherton.com/loaders) -->
+<!-- - [Slick Carousel](https://kenwheeler.github.io/slick) -->
+<!-- - [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll) -->
+<!-- - [Sticky Kit](http://leafo.net/sticky-kit) -->
+<!-- - [JVectorMap](http://jvectormap.com) -->
 
 <!-- vercel -->
 
