@@ -5,8 +5,8 @@ import styles from '@styles/widgets/ISocial.module.scss'
 const ISocial = () => {
   const socialArr = [
     { type: 'github' as const, url: 'https://github.com/Aireck2' },
-    { type: 'instagram' as const, url: 'https://www.instagram.com/_aireck._/' },
     { type: 'linkedIn' as const, url: 'https://www.linkedin.com/in/erickescriba/' },
+    { type: 'instagram' as const, url: 'https://www.instagram.com/_aireck._/' },
     { type: 'codePen' as const, url: 'https://codepen.io/Aireck' },
   ]
   return (
