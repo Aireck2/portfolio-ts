@@ -36,7 +36,9 @@ const VMenu: NextPage = () => {
         <li key="button">
           <button className={styles.VMenu__button}>
             <Link href={`/resume_${locale?.toUpperCase()}.pdf`}>
-              <a target="_blank">{t('resume')}</a>
+              <a target="_blank">
+                <span>{t('resume')}</span>
+              </a>
             </Link>
           </button>
         </li>

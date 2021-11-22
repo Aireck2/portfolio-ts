@@ -58,7 +58,7 @@
 
 <!-- [![Product Name Screen Shot][(./public/images/portfolio-bg.png)](https://example.com) -->
  <a href="https://erickescriba.vercel.app/">
-    <img src="public/images/portfolio-bg.png" alt="Logo" width="800" height="400">
+    <img src="public/images/portfolio-bg.png" alt="Logo" width="800" height="600">
   </a>
 
 The main purpose of this project is to show a collection of evidence, which not only summarizes my work, but also explains my individual learning processes.
