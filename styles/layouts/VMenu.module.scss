@@ -34,12 +34,16 @@
   }
 
   &__button {
-    @include nav-link-1;
     font-size: 16px;
     outline: none;
     font-family: $font-body;
     cursor: pointer;
     border: none;
+    background: none;
+    span {
+      @include nav-link-1;
+    }
+    // @include nav-link-1;
   }
 }
 

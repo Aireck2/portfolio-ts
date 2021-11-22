@@ -16,6 +16,8 @@
   &__subheading {
     margin-bottom: 5px;
     font-size: clamp(16px, 2vw, 20px);
+    display: flex;
+    grid-gap: 10px;
   }
 
   &__body {
@@ -26,27 +28,30 @@
   }
 
   &__highlight {
-    @include text-gradient;
+    display: flex;
+    grid-gap: 5px;
+    // @include nav-link-2;
+    color: $brand-new;
     a {
-      display: inline-block;
-      text-decoration: none;
-      text-decoration-skip-ink: auto;
+      width: 100%;
       position: relative;
-      transition: $transition;
-      @include text-gradient;
-      &:hover::after {
-        width: 100%;
-      }
-      &::after {
-        content: '';
-        display: block;
-        width: 0px;
-        height: 2px;
-        position: relative;
-        bottom: 0;
-        background: $background-gradient;
+      span {
         transition: $transition;
-        opacity: 0.5;
+        @include text-gradient;
+        &:hover::after {
+          width: 100%;
+        }
+        &::after {
+          content: '';
+          display: block;
+          width: 0px;
+          height: 2px;
+          position: relative;
+          bottom: 0;
+          background: $background-gradient;
+          transition: $transition;
+          opacity: 0.5;
+        }
       }
     }
   }
