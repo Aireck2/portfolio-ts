@@ -1,5 +1,11 @@
 import config from './config.helper'
 
+declare global {
+  interface Window {
+    gtag: any
+  }
+}
+
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageView = (url: string) => {
   window.gtag('config', config.marketing.ga.trackingId, {
@@ -15,6 +21,7 @@ export const event = ({ action, category, label, value }: any) => {
     value: value,
   })
 }
+
 const gtag = {
   pageView,
   event,
