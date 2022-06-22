@@ -150,7 +150,6 @@ Project Link:
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
 - [Vercel](https://pages.github.com)
-- [Particlesjs](https://particles.js.org/)
 - [Font Awesome](https://fontawesome.com)
 <!-- - [Loaders.css](https://connoratherton.com/loaders) -->
 <!-- - [Slick Carousel](https://kenwheeler.github.io/slick) -->
