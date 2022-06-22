@@ -5,7 +5,7 @@ interface IProps {
   column?: 1 | 2
 }
 
-const QList: React.FC<IProps> = (props) => {
+export const List: React.FC<IProps> = (props) => {
   const { arr, column = 1, ...others } = props
 
   return (
@@ -18,4 +18,3 @@ const QList: React.FC<IProps> = (props) => {
     </ul>
   )
 }
-export default QList

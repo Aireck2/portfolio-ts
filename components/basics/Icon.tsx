@@ -32,7 +32,7 @@ interface IProps {
   size?: 'small' | 'default'
 }
 
-const QIconLink: React.FC<IProps> = (props) => {
+export const Icon: React.FC<IProps> = (props) => {
   const { url, type, text, size = 'default', ...others } = props
 
   const ICONS = {
@@ -65,4 +65,3 @@ const QIconLink: React.FC<IProps> = (props) => {
     </a>
   )
 }
-export default QIconLink
