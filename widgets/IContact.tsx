@@ -70,7 +70,7 @@ const IContact = () => {
           </li>
         ))}
       </ul>
-      <p className={styles.IContact__body}> 2022 © Erick Escriba - Have 365 Nice days</p>
+      <p className={styles.IContact__body}> 2022 © Erick Escriba - {t('footerQuote')}</p>
     </div>
   )
 }

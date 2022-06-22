@@ -20,10 +20,10 @@ const IProjects = () => {
               <div>
                 <div className={styles.IProjects__inner__content__description}>
                   <div className={styles.IProjects__subheading__container}>
-                    <p className={styles.IProjects__subheading__overline}>Featured Project</p>
+                    <p className={styles.IProjects__subheading__overline}>{t('projectSubtitle')}</p>
                     <p className={styles.IProjects__subheading__title}>{project.name}</p>
                   </div>
-                  <p className={styles.IProjects__body}>{project.description}</p>
+                  <p className={styles.IProjects__body}>{t(project.description)}</p>
                   <ul className={styles.IProjects__inner__content__list}>
                     {project.technologies.map((tech, index) => (
                       <li key={index}>{tech}</li>
