@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl'
 
 import styles from '@styles/layouts/VMenu.module.scss'
 
-const VMenu: NextPage = () => {
+const Navbar: NextPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { locale, locales, route } = useRouter()
 
@@ -90,4 +90,4 @@ const VMenu: NextPage = () => {
     </div>
   )
 }
-export default VMenu
+export default Navbar

@@ -1,9 +1,7 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 
-import Particles from 'react-tsparticles'
-
-import { VContainer, VMenu } from '@layouts/index'
+import { Layout, Navbar } from '@layout'
 import {
   IAbout,
   IExperience,
@@ -29,109 +27,41 @@ const Home: NextPage = (_props) => {
         <link rel="icon" href="/logos/logo-white.svg" />
       </Head>
       <header>
-        <VMenu />
+        <Navbar />
       </header>
       <main>
         <IEmail />
         <ISocial />
 
         <section className={styles.Home__banner}>
-          <VContainer>
+          <Layout>
             <IHome />
-          </VContainer>
+          </Layout>
         </section>
 
         <section className={styles.Home__about} id="about">
-          <VContainer>
+          <Layout>
             <IAbout />
-          </VContainer>
+          </Layout>
         </section>
         <div className={styles.Home__experience} id="experience">
-          <VContainer>
+          <Layout>
             <IExperience />
-          </VContainer>
+          </Layout>
         </div>
         <section className={styles.Home__experience} id="projects">
-          <VContainer>
+          <Layout>
             <IProjects />
             <IOtherProjects />
-          </VContainer>
+          </Layout>
         </section>
 
         <section className={styles.Home__contact} id="contact">
-          <VContainer>
+          <Layout>
             <IContact />
-          </VContainer>
+          </Layout>
         </section>
       </main>
-      <Particles
-        id="tsparticles"
-        options={{
-          fullScreen: {
-            enable: true,
-            zIndex: 100,
-          },
-          fpsLimit: 60,
-          particles: {
-            number: {
-              value: 0,
-            },
-            color: {
-              value: '#ff0000',
-              animation: {
-                enable: true,
-                speed: 180,
-                sync: true,
-              },
-            },
-            shape: {
-              type: 'circle',
-            },
-            opacity: {
-              value: 1,
-            },
-            size: {
-              value: { min: 1, max: 5 },
-              animation: {
-                enable: true,
-                speed: 5,
-                minimumValue: 1,
-                sync: true,
-                startValue: 'min',
-                count: 1,
-              },
-            },
-            move: {
-              enable: true,
-              speed: { min: 10, max: 20 },
-              direction: 'top',
-              random: false,
-              straight: false,
-              outMode: 'bounce-horizontal',
-              gravity: {
-                enable: true,
-              },
-            },
-          },
-          interactivity: {
-            detectsOn: 'window',
-            events: {
-              onclick: {
-                enable: true,
-                mode: 'trail',
-              },
-              resize: true,
-            },
-            modes: {
-              trail: {
-                delay: 0.1,
-                quantity: 1,
-              },
-            },
-          },
-          retina_detect: true,
-        }}
-      />
     </>
   )
 }
