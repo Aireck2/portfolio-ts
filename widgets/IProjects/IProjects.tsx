@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
-import { QIconLink } from '@components/index'
+import { Icon } from '@components'
 import { projects } from './data'
 
 import styles from '@styles/widgets/IProjects.module.scss'
@@ -32,7 +32,7 @@ const IProjects = () => {
                   <ul className={styles.IProjects__inner__content__links}>
                     {project.links.map((link, index) => (
                       <li key={index}>
-                        <QIconLink type={link.type} url={link.url} />
+                        <Icon type={link.type} url={link.url} />
                       </li>
                     ))}
                   </ul>

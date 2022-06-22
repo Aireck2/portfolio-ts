@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl'
 
-import QList from '@components/QList'
+import { List } from '@components'
 
 import styles from '@styles/widgets/IExperience.module.scss'
 
@@ -32,7 +32,7 @@ const IExperience = () => {
       </p>
       <p className={styles.IExperience__body}>{t('jobDate1')}</p>
 
-      <QList arr={info.jobDescription} />
+      <List arr={info.jobDescription} />
     </div>
   )
 }

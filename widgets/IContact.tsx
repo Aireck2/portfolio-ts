@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
 
-import { QButton, QIconLink } from '@components/index'
+import { Button, Icon } from '@components'
 
 import styles from '@styles/widgets/IContact.module.scss'
 
@@ -53,24 +53,24 @@ const IContact = () => {
         <h2 className={styles.IContact__heading}>{t('getInTouch')}</h2>
         <p className={styles.IContact__subheading}>{t('contactDescription')}</p>
 
-        <QButton href={`mailto:${info.email}`} text={t('sayHello')} />
+        <Button href={`mailto:${info.email}`} text={t('sayHello')} />
       </div>
 
       <ul className={styles.IContact__social}>
         {info.socialArr.map((social, index) => (
           <li key={index}>
-            <QIconLink type={social.type} url={social.url} />
+            <Icon type={social.type} url={social.url} />
           </li>
         ))}
       </ul>
       <ul className={styles.IContact__github_stats}>
         {info.github.map((item, index) => (
           <li key={index}>
-            <QIconLink type={item.type} url={item.url} size="small" text={item.count.toString()} />
+            <Icon type={item.type} url={item.url} size="small" text={item.count.toString()} />
           </li>
         ))}
       </ul>
-      <p className={styles.IContact__body}> 2021 © Erick Escriba - Have 365 Nice days</p>
+      <p className={styles.IContact__body}> 2022 © Erick Escriba - Have 365 Nice days</p>
     </div>
   )
 }

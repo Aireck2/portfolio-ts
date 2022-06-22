@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
 
-import QIconLink from '@components/QIconLink'
+import { Icon } from '@components'
+
 import FolderIcon from '@public/icons/folder.svg'
 
 import { otherProjects } from './data'
@@ -22,7 +23,7 @@ const IOtherProjects = () => {
               <ul className={styles.IOtherProjects__links}>
                 {project.links.map((link, index) => (
                   <li key={index}>
-                    <QIconLink type={link.type} url={link.url} />
+                    <Icon type={link.type} url={link.url} />
                   </li>
                 ))}
               </ul>
