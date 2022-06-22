@@ -10,7 +10,7 @@ const IExperience = () => {
   const info = {
     company: 'EquipIndustry',
     companyWeb: 'http://equipindustry.com',
-    jobPosition: 'Front-end Developer',
+    jobPosition: t('job'),
     jobDescription: [
       t('jobDescription1'),
       t('jobDescription2'),
