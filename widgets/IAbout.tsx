@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
-import QList from '@components/QList'
+import { List } from '@components'
 
 import styles from '@styles/widgets/IAbout.module.scss'
 
@@ -12,13 +12,14 @@ const IAbout = () => {
     description: [t('description1'), t('description2'), t('description3')],
     skills: [
       'Typescript',
-      'React',
       'NextJS',
+      'React',
       'JavaScript (ES6+)',
       'GraphQL',
       'Node.js',
       'MongoDB',
       'Git',
+      'HTML5',
       'CSS3',
       'SCSS',
       'LESS',
@@ -34,7 +35,7 @@ const IAbout = () => {
               {description}
             </p>
           ))}
-          <QList arr={info.skills} column={2} />
+          <List arr={info.skills} column={2} />
         </div>
 
         <div className={styles.IAbout__photo_container}>

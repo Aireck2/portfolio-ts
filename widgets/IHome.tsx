@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl'
 
+import { Button } from '@components'
+
 import styles from '@styles/widgets/IHome.module.scss'
-import React from 'react'
-import QButton from '@components/QButton'
 
 const IHome = () => {
   const t = useTranslations('Index')
@@ -10,7 +10,7 @@ const IHome = () => {
   const homeInfo = {
     greetings: t('greet'),
     name: 'Erick Escriba',
-    phrase: 'I build things for the web',
+    phrase: t('phrase'),
     description: t('description'),
     email: 'erickescribaa@gmail.com',
   }
@@ -20,12 +20,7 @@ const IHome = () => {
       <h2 className={styles.IHome__heading}>{homeInfo.name}.</h2>
       <h2 className={styles.IHome__heading}>{homeInfo.phrase}.</h2>
       <p className={styles.IHome__body}>{homeInfo.description}</p>
-      <QButton href={`mailto:${homeInfo.email}`} text={t('getInTouch')}></QButton>
-      {/* <button className={styles.IHome__button}>
-        <a href={`mailto:${homeInfo.email}`} target="_blank" rel="noreferrer">
-          {t('getInTouch')}
-        </a>
-      </button> */}
+      <Button href={`mailto:${homeInfo.email}`} text={t('getInTouch')} />
     </div>
   )
 }
