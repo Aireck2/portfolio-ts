@@ -18,9 +18,9 @@
     "baseUrl": "./",
     "paths": {
       "@styles/*": ["styles/*"],
-      "@components/*": ["components/*"],
+      "@components": ["components/index.ts"],
       "@widgets/*": ["widgets/*"],
-      "@layouts/*": ["layouts/*"],
+      "@layout": ["components/layout/index.ts"],
       "@locales/*": ["locales/*"],
       "@public/*": ["public/*"]
     },
