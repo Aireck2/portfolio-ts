@@ -1,9 +1,11 @@
 import styles from '@styles/components/QButton.module.scss'
+
 interface IProps {
   href: string
   text: string
 }
-const QButton: React.FC<IProps> = (props) => {
+
+export const Button: React.FC<IProps> = (props) => {
   const { href, text } = props
   return (
     <button className={styles.QButton}>
@@ -13,4 +15,3 @@ const QButton: React.FC<IProps> = (props) => {
     </button>
   )
 }
-export default QButton
