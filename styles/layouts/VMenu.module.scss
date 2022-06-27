@@ -21,8 +21,11 @@
     grid-template-columns: repeat(4, auto);
     align-items: center;
     justify-content: center;
-    grid-gap: 40px;
+    grid-gap: 20px;
     font-family: $font-body;
+    @media screen and (min-width: 978px) {
+      grid-gap: 40px;
+    }
     & li {
       height: 100%;
       padding: 20px 0px;
