@@ -19,10 +19,12 @@
     "paths": {
       "@styles/*": ["styles/*"],
       "@components": ["components/index.ts"],
+      "@icons": ["components/basics/icons/index.ts"],
       "@screens": ["components/screens/index.ts"],
       "@layout": ["components/layout/index.ts"],
       "@locales/*": ["locales/*"],
-      "@public/*": ["public/*"]
+      "@public/*": ["public/*"],
+      "@helpers/*": ["helpers/*"]
     },
     "incremental": true
   }
