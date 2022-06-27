@@ -19,7 +19,7 @@
     "paths": {
       "@styles/*": ["styles/*"],
       "@components": ["components/index.ts"],
-      "@widgets/*": ["widgets/*"],
+      "@screens": ["components/screens/index.ts"],
       "@layout": ["components/layout/index.ts"],
       "@locales/*": ["locales/*"],
       "@public/*": ["public/*"]
