@@ -3,15 +3,15 @@ import Head from 'next/head'
 
 import { Layout, Navbar } from '@layout'
 import {
-  IAbout,
-  IExperience,
-  IHome,
-  IContact,
-  IEmail,
-  ISocial,
-  IProjects,
-  IOtherProjects,
-} from '@widgets/index'
+  About,
+  Experience,
+  Banner,
+  Contact,
+  Email,
+  Social,
+  Projects,
+  OtherProjects,
+} from '@screens'
 
 import styles from '@styles/views/Home.module.scss'
 
@@ -30,38 +30,37 @@ const Home: NextPage = (_props) => {
         <Navbar />
       </header>
       <main>
-        <IEmail />
-        <ISocial />
-
         <section className={styles.Home__banner}>
           <Layout>
-            <IHome />
+            <Banner />
           </Layout>
         </section>
 
         <section className={styles.Home__about} id="about">
           <Layout>
-            <IAbout />
+            <About />
           </Layout>
         </section>
         <div className={styles.Home__experience} id="experience">
           <Layout>
-            <IExperience />
+            <Experience />
           </Layout>
         </div>
         <section className={styles.Home__experience} id="projects">
           <Layout>
-            <IProjects />
-            <IOtherProjects />
+            <Projects />
+            <OtherProjects />
           </Layout>
         </section>
 
         <section className={styles.Home__contact} id="contact">
           <Layout>
-            <IContact />
+            <Contact />
           </Layout>
         </section>
       </main>
+      <Email />
+      <Social />
     </>
   )
 }
