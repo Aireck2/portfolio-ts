@@ -8,7 +8,7 @@
 
         "greet": "Hi, my name is",
         "phrase": "I build things for the web",
-        "description": "I'm a front-end developer based in Lima, Peru . I'm currently into Web Development and I 'm passionate in building exceptional websites",
+        "description": "I'm a front-end developer based in Lima, Peru . I'm currently into web development and I'm passionate in building exceptional websites",
         "getInTouch": "Get in touch",
 
         "aboutMe": "About me",
@@ -22,9 +22,9 @@
         "jobDescription1": "I wrote modern, efficient and robust code for a wide range of internal projects.",
         "jobDescription2": "I worked with a variety of languages and frameworks like JavaScript, TypeScript, React, Nextjs, Graphql, etc.",
         "jobDescription3": "I worked closely with the designers and the commercial team to develop, document and manage the website using Nextjs, css and TypeScript.",
-        "jobDescription4": "Use APIʼs to connect the web application with various services and systems.",
+        "jobDescription4": "Use API's to connect the web application with various services and systems.",
 
-        "projectsTitle": "Some Things I’ve Built",
+        "projectsTitle": "Some Things I've Built",
         "projectSubtitle": "Featured project",
         "1ProjectDescription": "The main purpose of this project is to show a collection of evidence, which not only summarizes my work, but also explains my individual learning processes.",
         "2ProjectDescription": "Single Page App which show how React can be used with react-intl for translations management with Poedit",
