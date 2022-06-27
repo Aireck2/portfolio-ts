@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   i18n: {
-    locales: ['en', 'es'],
+    locales: ['en', 'es', 'de'],
     defaultLocale: 'en',
   },
   reactStrictMode: true,
