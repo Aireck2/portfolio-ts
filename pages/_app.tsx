@@ -4,15 +4,20 @@ import { useRouter } from 'next/router'
 import Script from 'next/script'
 
 import { NextIntlProvider } from 'next-intl'
+import { NextUIProvider, useTheme } from '@nextui-org/react'
+import { ThemeProvider as NextThemesProvider } from 'next-themes'
 
-import gtag from 'helpers/ga.helper'
-import config from 'helpers/config.helper'
+import gtag from '@helpers/ga.helper'
+import config from '@helpers/config.helper'
 
 import '@styles/globals.scss'
+import { darkTheme, lightTheme } from 'themes'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter()
+  const theme = useTheme()
 
+  // TODO: refactor ga config
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       gtag.pageView(url)
@@ -25,8 +30,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <NextIntlProvider
-      // To achieve consistent date, time and number formatting
-      // across the app, you can define a set of global formats.
       formats={{
         dateTime: {
           short: {
@@ -37,12 +40,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         },
       }}
       messages={pageProps.messages}
-      // Providing an explicit value for `now` ensures consistent formatting of
-      // relative values regardless of the server or client environment.
       now={new Date(pageProps.now)}
-      // Also an explicit time zone is helpful to ensure dates render the
-      // same way on the client as on the server, which might be located
-      // in a different time zone.
       timeZone="Central Daylight Time"
     >
       <Script
@@ -64,7 +62,18 @@ function MyApp({ Component, pageProps }: AppProps) {
           `,
         }}
       />
-      <Component {...pageProps} />
+      <NextThemesProvider
+        defaultTheme="system"
+        attribute="class"
+        value={{
+          light: lightTheme.className,
+          dark: darkTheme.className,
+        }}
+      >
+        <NextUIProvider theme={theme.theme}>
+          <Component {...pageProps} />
+        </NextUIProvider>
+      </NextThemesProvider>
     </NextIntlProvider>
   )
 }

@@ -15,7 +15,7 @@ import {
 
 import styles from '@styles/views/Home.module.scss'
 
-const Home: NextPage = (_props) => {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
