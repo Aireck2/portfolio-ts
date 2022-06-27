@@ -1,6 +1,6 @@
 import styles from '@styles/widgets/ISocial.module.scss'
 
-const IEmail = () => {
+const Email = () => {
   const info = {
     email: 'erickescribaa@gmail.com',
   }
@@ -14,4 +14,4 @@ const IEmail = () => {
     </div>
   )
 }
-export default IEmail
+export default Email

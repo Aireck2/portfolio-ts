@@ -6,7 +6,7 @@ import { projects } from './data'
 
 import styles from '@styles/widgets/IProjects.module.scss'
 
-const IProjects = () => {
+const Projects = () => {
   const t = useTranslations('Index')
 
   return (
@@ -57,4 +57,4 @@ const IProjects = () => {
     </div>
   )
 }
-export default IProjects
+export default Projects

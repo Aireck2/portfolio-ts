@@ -4,7 +4,7 @@ import { List } from '@components'
 
 import styles from '@styles/widgets/IExperience.module.scss'
 
-const IExperience = () => {
+const Experience = () => {
   const t = useTranslations('Index')
 
   const info = {
@@ -36,4 +36,4 @@ const IExperience = () => {
     </div>
   )
 }
-export default IExperience
+export default Experience

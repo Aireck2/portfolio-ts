@@ -2,7 +2,7 @@ import { Icon } from '@components'
 
 import styles from '@styles/widgets/ISocial.module.scss'
 
-const ISocial = () => {
+const Social = () => {
   const socialArr = [
     { type: 'github' as const, url: 'https://github.com/Aireck2' },
     { type: 'linkedIn' as const, url: 'https://www.linkedin.com/in/erickescriba/' },
@@ -21,4 +21,4 @@ const ISocial = () => {
     </div>
   )
 }
-export default ISocial
+export default Social
