@@ -5,7 +5,7 @@ import { List } from '@components'
 
 import styles from '@styles/widgets/IAbout.module.scss'
 
-const IAbout = () => {
+const About = () => {
   const t = useTranslations('Index')
 
   const info = {
@@ -41,7 +41,7 @@ const IAbout = () => {
         <div className={styles.IAbout__photo_container}>
           <div className={styles.IAbout__photo__wrapper}>
             <Image
-              src="/images/photo.png"
+              src="/images/about.png"
               alt="Erick Logo"
               width={400}
               height={400}
@@ -53,4 +53,4 @@ const IAbout = () => {
     </div>
   )
 }
-export default IAbout
+export default About

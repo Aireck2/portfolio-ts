@@ -8,7 +8,7 @@ import { otherProjects } from './data'
 
 import styles from '@styles/widgets/IOtherProjects.module.scss'
 
-const IOtherProjects = () => {
+const OtherProjects = () => {
   const t = useTranslations('Index')
 
   return (
@@ -43,4 +43,4 @@ const IOtherProjects = () => {
     </div>
   )
 }
-export default IOtherProjects
+export default OtherProjects

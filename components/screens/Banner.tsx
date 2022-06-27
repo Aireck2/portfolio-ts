@@ -4,7 +4,7 @@ import { Button } from '@components'
 
 import styles from '@styles/widgets/IHome.module.scss'
 
-const IHome = () => {
+const Banner = () => {
   const t = useTranslations('Index')
 
   const homeInfo = {
@@ -24,4 +24,4 @@ const IHome = () => {
     </div>
   )
 }
-export default IHome
+export default Banner

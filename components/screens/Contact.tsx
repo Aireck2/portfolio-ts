@@ -5,7 +5,7 @@ import { Button, Icon } from '@components'
 
 import styles from '@styles/widgets/IContact.module.scss'
 
-const IContact = () => {
+const Contact = () => {
   const t = useTranslations('Index')
   const [githubInfo, setGitHubInfo] = useState({
     stars: '0',
@@ -74,4 +74,4 @@ const IContact = () => {
     </div>
   )
 }
-export default IContact
+export default Contact
