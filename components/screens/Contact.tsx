@@ -34,7 +34,7 @@ const Contact = () => {
     ],
   }
   useEffect(() => {
-    fetch('https://api.github.com/repos/Aireck2/Aireck2')
+    fetch('https://api.github.com/repos/Aireck2/portfolio-ts')
       .then((response) => response.json())
       .then((json) => {
         const { stargazers_count, forks_count } = json
