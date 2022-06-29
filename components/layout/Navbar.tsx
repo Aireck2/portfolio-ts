@@ -55,7 +55,7 @@ const Navbar: NextPage = () => {
             <Dropdown.Button
               flat
               color="primary"
-              icon={constants.languages[locale as Languages].icon}
+              // icon={constants.languages[locale as Languages].icon}
             >
               {constants.languages[locale as Languages].text}
             </Dropdown.Button>
@@ -65,7 +65,7 @@ const Navbar: NextPage = () => {
                 <Dropdown.Item
                   key={locale}
                   css={{ a: { display: 'block' } }}
-                  icon={constants.languages[locale as Languages].icon}
+                  // icon={constants.languages[locale as Languages].icon}
                   textValue={locale}
                 >
                   {locale !== 'de' ? (
