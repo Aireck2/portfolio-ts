@@ -1,30 +1,27 @@
-import { useState } from 'react'
-import { NextPage } from 'next'
-import Image from 'next/image'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
+import React, { useState, useEffect } from 'react'
+import NextLink from 'next/link'
+import Image from 'next/future/image'
 
-import { Dropdown, useTheme } from '@nextui-org/react'
+import { Row, Col, Spacer, Link, Container } from '@nextui-org/react'
 import { useTranslations } from 'next-intl'
-import { useTheme as useNextTheme } from 'next-themes'
 
-import constants, { Languages } from '@helpers/constants'
+import { LanguageSelect, MobileNavigation, ResumeButton, ThemeToggle } from '@components'
 
-import styles from '@styles/layouts/VMenu.module.scss'
+import { StyledNavContainer, StyledNavMainContainer } from './styles'
 
-const Navbar: NextPage = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const { locale, locales, route } = useRouter()
-  const { setTheme } = useNextTheme()
-  const { isDark } = useTheme()
+const Navbar: React.FC = () => {
+  const [scrollPosition, setScrollPosition] = useState(0)
 
   const t = useTranslations('Index')
 
-  const otherLocale = locales?.filter((cur) => cur !== locale)
+  const detached = scrollPosition > 0
+  const showBlur = !!detached
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
-
-  const toggleTheme = () => setTheme(isDark ? 'light' : 'dark')
+  const onScroll = () => {
+    requestAnimationFrame(() => {
+      setScrollPosition(window.pageYOffset)
+    })
+  }
 
   const menuItems = [
     { name: t('about'), url: '#about' },
@@ -34,84 +31,72 @@ const Navbar: NextPage = () => {
   ]
 
   const menu = (
-    <nav>
-      <ul className={styles.VMenu__navbar}>
-        {menuItems.map((item, index) => (
-          <li key={index}>
-            <a href={item.url}>{item.name}</a>
-          </li>
-        ))}
-        <li key="button">
-          <button className={styles.VMenu__button}>
-            <Link href={`/resume_${locale?.toUpperCase()}.pdf`}>
-              <a target="_blank">
-                <span>{t('resume')}</span>
-              </a>
-            </Link>
-          </button>
-        </li>
-        <li style={{ display: 'flex', gridGap: 5 }}>
-          <Dropdown>
-            <Dropdown.Button
-              flat
-              color="primary"
-              // icon={constants.languages[locale as Languages].icon}
-            >
-              {constants.languages[locale as Languages].text}
-            </Dropdown.Button>
-
-            <Dropdown.Menu aria-label="Static Actions" disabledKeys={['de']}>
-              {otherLocale?.map((locale) => (
-                <Dropdown.Item
-                  key={locale}
-                  css={{ a: { display: 'block' } }}
-                  // icon={constants.languages[locale as Languages].icon}
-                  textValue={locale}
-                >
-                  {locale !== 'de' ? (
-                    <Link href={route} locale={locale}>
-                      <a>{constants.languages[locale as Languages].text}</a>
-                    </Link>
-                  ) : (
-                    constants.languages[locale as Languages].text
-                  )}
-                </Dropdown.Item>
-              )) ?? (
-                <Dropdown.Item key={'es'} textValue={'ES'}>
-                  ES
-                </Dropdown.Item>
-              )}
-            </Dropdown.Menu>
-          </Dropdown>
-          {/* <Button auto flat onClick={toggleTheme} icon={isDark ? <Sun /> : <Moon />} /> */}
-        </li>
-      </ul>
-    </nav>
+    <>
+      {menuItems.map(({ name, url }, index) => (
+        <div key={index} style={{ display: 'flex' }}>
+          <Link
+            href={url}
+            css={{
+              color: '$text',
+            }}
+          >
+            {name}
+          </Link>
+          <Spacer x={1} />
+        </div>
+      ))}
+      <ResumeButton />
+    </>
   )
+  useEffect(() => {
+    setScrollPosition((typeof window !== 'undefined' && window.pageYOffset) || 0)
+    window.addEventListener('scroll', onScroll.bind(this))
+    return () => {
+      window.removeEventListener('scroll', onScroll.bind(this))
+    }
+  }, [])
 
   return (
-    <div className={styles.VMenu__background}>
-      <nav className={styles.VMenu__container}>
-        <h3>
-          <Link href="/">
-            <a>
-              <Image src="/logos/logo.svg" alt="Erick Logo" width={34} height={34} />
-            </a>
-          </Link>
-        </h3>
-        <div className={styles.VMenu__container__wrapper}>{menu}</div>
-        <button
-          type="button"
-          onClick={toggleMenu}
-          className={`MenuIcon${isMenuOpen ? ' active' : ''}`}
-        >
-          <div className="ham-box">
-            <div className="ham-box-inner" />
-          </div>
-        </button>
-        <aside className={`Aside${isMenuOpen ? ' active' : ''}`}>{menu}</aside>
-      </nav>
-    </div>
+    <StyledNavMainContainer>
+      <StyledNavContainer detached={detached} showBlur={showBlur}>
+        <Container lg={true} as="nav" display="flex" wrap="nowrap" alignItems="center">
+          <Row align="center">
+            <NextLink href="/">
+              <Link href="/">
+                <Image src="/logos/logo.svg" alt="Erick Logo" width={34} height={34} />
+              </Link>
+            </NextLink>
+          </Row>
+          <Col>
+            <Row justify="flex-end" align="center">
+              <Col
+                css={{
+                  display: 'flex',
+                  justifyContent: 'flex-end',
+                  '@media screen and (max-width: 767px)': { d: 'none' },
+                }}
+              >
+                {menu}
+              </Col>
+              <Col
+                css={{
+                  display: 'flex',
+                  justifyContent: 'flex-end',
+                  width: 'auto',
+                }}
+              >
+                <Spacer x={1} />
+                <LanguageSelect />
+                <Spacer x={0.5} />
+                <ThemeToggle />
+              </Col>
+            </Row>
+          </Col>
+          <MobileNavigation menu={menu} />
+        </Container>
+      </StyledNavContainer>
+    </StyledNavMainContainer>
   )
 }
+
 export default Navbar
