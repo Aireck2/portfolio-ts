@@ -24,7 +24,8 @@
       "@layout": ["components/layout/index.ts"],
       "@locales/*": ["locales/*"],
       "@public/*": ["public/*"],
-      "@helpers/*": ["helpers/*"]
+      "@helpers/*": ["helpers/*"],
+      "@hooks/*": ["hooks/*"]
     },
     "incremental": true
   }
