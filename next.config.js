@@ -7,6 +7,8 @@ module.exports = {
   },
   reactStrictMode: true,
 
+  experimental: { images: { allowFutureImage: true } },
+
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },

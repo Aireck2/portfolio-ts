@@ -7,11 +7,12 @@ import { NextIntlProvider } from 'next-intl'
 import { NextUIProvider, useTheme } from '@nextui-org/react'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 
+import { darkTheme, lightTheme } from 'themes'
+
 import gtag from '@helpers/ga.helper'
 import config from '@helpers/config.helper'
 
-import '@styles/globals.scss'
-import { darkTheme, lightTheme } from 'themes'
+import { globalStyles } from '@styles/globalStyles'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter()
@@ -28,6 +29,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     }
   }, [router.events])
 
+  globalStyles()
   return (
     <NextIntlProvider
       formats={{
