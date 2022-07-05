@@ -26,9 +26,7 @@ const Home: NextPage = () => {
         <meta name="keywords" content={'Erick EA'} />
         <link rel="icon" href="/logos/logo-white.svg" />
       </Head>
-      <header>
-        <Navbar />
-      </header>
+      <Navbar />
       <main>
         <section className={styles.Home__banner}>
           <Layout>
