@@ -60,13 +60,21 @@ const Navbar: React.FC = () => {
     <StyledNavMainContainer>
       <StyledNavContainer detached={detached} showBlur={showBlur}>
         <Container lg={true} as="nav" display="flex" wrap="nowrap" alignItems="center">
-          <Row align="center">
-            <NextLink href="/">
-              <Link href="/">
-                <Image src="/logos/logo.svg" alt="Erick Logo" width={34} height={34} />
-              </Link>
-            </NextLink>
-          </Row>
+          <Col css={{ width: '34px' }}>
+            <Row align="center">
+              <NextLink href="/">
+                <Link href="/">
+                  <Image
+                    src="/logos/logo.svg"
+                    alt="Erick Logo"
+                    width={34}
+                    height={34}
+                    style={{ maxWidth: 'unset' }}
+                  />
+                </Link>
+              </NextLink>
+            </Row>
+          </Col>
           <Col>
             <Row justify="flex-end" align="center">
               <Col
@@ -92,7 +100,7 @@ const Navbar: React.FC = () => {
               </Col>
             </Row>
           </Col>
-          <MobileNavigation menu={menu} />
+          <MobileNavigation menu={menuItems} />
         </Container>
       </StyledNavContainer>
     </StyledNavMainContainer>
