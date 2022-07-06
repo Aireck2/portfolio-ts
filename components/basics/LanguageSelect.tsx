@@ -14,7 +14,7 @@ export const LanguageSelect = () => {
     <Dropdown>
       <Dropdown.Button
         flat
-        color="primary"
+        color="secondary"
         // icon={constants.languages[locale as Languages].icon}
       >
         {constants.languages[locale as Languages].text}
