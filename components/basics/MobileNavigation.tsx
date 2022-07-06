@@ -1,13 +1,13 @@
 import { useMediaQuery } from '@hooks/useMediaQuery'
 import { useOutside } from '@hooks/useOutside'
-import { CSS, styled } from '@nextui-org/react'
+import { CSS, Link, styled, Text } from '@nextui-org/react'
 
 import { useRef, useState } from 'react'
 
 interface Props {
   open?: boolean
   css?: CSS
-  menu: any
+  menu: any[]
 }
 
 const StyledButton = styled('button', {
@@ -69,7 +69,6 @@ const StyledButton = styled('button', {
   },
 })
 const StyledAside = styled('aside', {
-  dflex: 'center',
   position: 'fixed',
   top: 0,
   bottom: 0,
@@ -85,9 +84,10 @@ const StyledAside = styled('aside', {
   transform: 'translateX(100vw)',
   visibility: 'hidden',
   transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
+  dflex: 'center',
+  gridGap: '20px',
+  flexDirection: 'column',
   '&.active': {
-    dflex: 'center',
-    flexDirection: 'column',
     transform: 'translateX(0vw)',
     visibility: 'visible',
     transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
@@ -125,7 +125,21 @@ export const MobileNavigation: React.FC<Props> = ({ css, menu }) => {
             <div className="ham-box-inner" />
           </div>
         </StyledButton>
-        <StyledAside className={active ? 'active' : undefined}>{menu}</StyledAside>
+        <StyledAside className={active ? 'active' : undefined}>
+          {menu.map(({ name, url }, index) => (
+            <Link
+              key={index}
+              href={url}
+              css={{
+                color: '$text',
+                fontSize: 20,
+              }}
+              onClick={handleCloseMenu}
+            >
+              {name}
+            </Link>
+          ))}
+        </StyledAside>
       </div>
     )
   return <></>
