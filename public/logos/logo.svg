@@ -16,7 +16,7 @@
     </g>
     <path
         d="M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24zm-9-34.8V12h18v4.2H19.2v6h13.2v3.6H19.2v6H33V36H15V13.2z"
-        fill="#555" />
+        fill="#697177" />
     <defs>
         <filter id="prefix__filter0_i" x="1" y="3" width="41" height="47" filterUnits="userSpaceOnUse">
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
