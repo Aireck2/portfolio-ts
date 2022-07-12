@@ -14,6 +14,7 @@ import {
 } from '@screens'
 
 import styles from '@styles/views/Home.module.scss'
+import LooperBG from 'components/basics/LooperBG'
 
 const Home: NextPage = () => {
   return (
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
           <Layout>
             <Banner />
           </Layout>
+          <LooperBG />
         </section>
 
         <section className={styles.Home__about} id="about">
