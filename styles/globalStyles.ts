@@ -2,6 +2,9 @@ import { globalCss } from '@nextui-org/react'
 
 export const globalStyles = globalCss({
   html: { scrollBehavior: 'smooth' },
+  main: {
+    overflow: 'hidden',
+  },
 
   'body.showBlur': {
     overflow: 'hidden',
