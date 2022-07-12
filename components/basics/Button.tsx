@@ -1,5 +1,4 @@
 import { styled, Button as NButton } from '@nextui-org/react'
-import styles from '@styles/components/QButton.module.scss'
 
 interface IProps {
   href: string
@@ -43,19 +42,10 @@ const StyledButton = styled('div', {
   },
 })
 
-export const Button: React.FC<IProps> = ({ href, text }) => {
-  // return (
-  //   <button className={styles.QButton}>
-  //     <a href={href} target="_blank" rel="noreferrer">
-  //       {text}
-  //     </a>
-  //   </button>
-  // )
-  return (
-    <StyledButton>
-      <a href={href} target="_blank" rel="noreferrer">
-        {text}
-      </a>
-    </StyledButton>
-  )
-}
+export const Button: React.FC<IProps> = ({ href, text }) => (
+  <StyledButton>
+    <a href={href} target="_blank" rel="noreferrer">
+      {text}
+    </a>
+  </StyledButton>
+)
