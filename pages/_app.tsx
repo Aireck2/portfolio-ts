@@ -1,3 +1,4 @@
+import { NextPage } from 'next'
 import { useEffect } from 'react'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
@@ -12,9 +13,9 @@ import { darkTheme, lightTheme } from 'themes'
 import gtag from '@helpers/ga.helper'
 import config from '@helpers/config.helper'
 
-import { globalStyles } from '@styles/globalStyles'
+import globalStyles from '@styles/globalStyles'
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+const Application: NextPage<AppProps<{}>> = ({ Component, pageProps }) => {
   const router = useRouter()
   const theme = useTheme()
 
@@ -65,18 +66,18 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         }}
       />
       <NextThemesProvider
-        defaultTheme="system"
+        defaultTheme="dark"
         attribute="class"
         value={{
           light: lightTheme.className,
           dark: darkTheme.className,
         }}
       >
-        <NextUIProvider theme={theme.theme}>
+        <NextUIProvider>
           <Component {...pageProps} />
         </NextUIProvider>
       </NextThemesProvider>
     </NextIntlProvider>
   )
 }
-export default MyApp
+export default Application

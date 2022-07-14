@@ -14,7 +14,7 @@ const defaultProps = {
 
 const StyledSvg = styled('svg', {
   position: 'absolute',
-  zIndex: 0,
+  zIndex: -1,
   right: 0,
   transform: 'translate(10%, 15%)',
   opacity: 0.9,
