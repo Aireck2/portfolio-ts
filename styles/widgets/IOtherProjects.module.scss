@@ -9,12 +9,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     grid-gap: 15px;
-    & > li {
-      padding: 32px 28px;
-      border-radius: 2px;
-      box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
-      background-color: white;
-    }
   }
   &__list {
     position: relative;
@@ -47,7 +41,6 @@
   &__heading {
     font-family: $font-display;
     font-size: 32px;
-    color: $not-quite-black;
     font-weight: 900;
     margin: 0px 0px 40px;
     text-align: center;
@@ -62,7 +55,6 @@
       margin-bottom: 10px;
     }
     &__title {
-      color: $not-quite-black;
       position: relative;
       font-family: $font-display;
       font-size: 20px;
@@ -79,8 +71,6 @@
     z-index: 2;
     padding: 15px 0;
     border-radius: $border-radius;
-    background-color: transparent;
-    color: $gray-subtitle;
     transition: $transition;
   }
 }

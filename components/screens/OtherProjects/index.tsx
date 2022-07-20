@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl'
+import { styled } from '@nextui-org/react'
 
 import { Icon } from '@components'
 
@@ -11,13 +12,20 @@ import styles from '@styles/widgets/IOtherProjects.module.scss'
 const OtherProjects = () => {
   const t = useTranslations('Index')
 
+  const CardStyled = styled('li', {
+    padding: '32px 28px',
+    borderRadius: 2,
+    bs: '2px 2px 7px -6px #23272a',
+    bg: '$accents0',
+  })
+
   return (
     <div className={styles.IOtherProjects__container}>
       <h2 className={styles.IOtherProjects__heading}>{t('otherProjectsTitle')}</h2>
 
       <ul className={styles.IOtherProjects__list__container}>
         {otherProjects.map((project, index) => (
-          <li className={styles.IOtherProjects__item__container} key={index}>
+          <CardStyled key={index}>
             <div className={styles.IOtherProjects__item__header}>
               <FolderIcon />
               <ul className={styles.IOtherProjects__links}>
@@ -37,7 +45,7 @@ const OtherProjects = () => {
                 ))}
               </ul>
             </div>
-          </li>
+          </CardStyled>
         ))}
       </ul>
     </div>
