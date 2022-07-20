@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import { styled } from '@nextui-org/react'
 
 import { Icon } from '@components'
+
 import { projects } from './data'
 
 import styles from '@styles/widgets/IProjects.module.scss'
@@ -9,9 +11,84 @@ import styles from '@styles/widgets/IProjects.module.scss'
 const Projects = () => {
   const t = useTranslations('Index')
 
+  const StyledContainer = styled('div', {
+    maxWidth: '1000px',
+    margin: '100px auto',
+    h2: {
+      marginBottom: 40,
+      maxWidth: '45ch',
+      fontFamily: '$sans',
+      fontWeight: '$black',
+      fontSize: '32px',
+    },
+    'p.gradient': {
+      background: '$gradient',
+      backgroundClip: 'text',
+      color: 'transparent',
+      margin: '16px 0 10px',
+      letterSpacing: '$normal',
+      fontFamily: '$mono',
+      position: 'relative',
+      zIndex: 40,
+    },
+    'p.subtitle': {
+      letterSpacing: '$normal',
+      fontSize: '$xl',
+      fontWeight: '$bold',
+      margin: 0,
+      position: 'relative',
+      zIndex: 40,
+      color: '$white',
+      '@media screen and (min-width: 767px)': {
+        color: '$accents9',
+      },
+    },
+    'p.body': {
+      fontSize: 16,
+      position: 'relative',
+      zIndex: 40,
+      padding: '0',
+      borderRadius: '4px',
+      letterSpacing: '$normal',
+      fontFamily: '$mono',
+      color: '$white',
+      bg: 'unset',
+      bs: '0 10px 30px -15px #23272a',
+      '@media screen and (min-width: 767px)': {
+        bg: '$background',
+        color: '$accents9',
+        padding: '25px',
+      },
+    },
+    '.techList': {
+      position: 'relative',
+      zIndex: 40,
+      display: 'flex',
+      color: '$white',
+      padding: 0,
+      margin: 0,
+      gridGap: '10px',
+      '@media screen and (min-width: 767px)': {
+        color: 'unset',
+      },
+    },
+    '.linkList': {
+      position: 'relative',
+      zIndex: 40,
+      display: 'flex',
+      color: '$white',
+      padding: 0,
+      margin: 0,
+      gridGap: '10px',
+      '@media screen and (min-width: 767px)': {
+        color: 'unset',
+      },
+    },
+  })
+
   return (
-    <div className={styles.IProjects__container}>
-      <h2 className={styles.IProjects__heading}>{t('projectsTitle')}</h2>
+    <StyledContainer>
+      <h2>{t('projectsTitle')}</h2>
 
       <ul>
         {projects.map((project, index) => (
@@ -20,16 +97,16 @@ const Projects = () => {
               <div>
                 <div className={styles.IProjects__inner__content__description}>
                   <div className={styles.IProjects__subheading__container}>
-                    <p className={styles.IProjects__subheading__overline}>{t('projectSubtitle')}</p>
-                    <p className={styles.IProjects__subheading__title}>{project.name}</p>
+                    <p className="gradient">{t('projectSubtitle')}</p>
+                    <p className="subtitle">{project.name}</p>
                   </div>
-                  <p className={styles.IProjects__body}>{t(project.description)}</p>
-                  <ul className={styles.IProjects__inner__content__list}>
+                  <p className="body">{t(project.description)}</p>
+                  <ul className="techList">
                     {project.technologies.map((tech, index) => (
                       <li key={index}>{tech}</li>
                     ))}
                   </ul>
-                  <ul className={styles.IProjects__inner__content__links}>
+                  <ul className="linkList">
                     {project.links.map((link, index) => (
                       <li key={index}>
                         <Icon type={link.type} url={link.url} />
@@ -54,7 +131,7 @@ const Projects = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </StyledContainer>
   )
 }
 export default Projects
