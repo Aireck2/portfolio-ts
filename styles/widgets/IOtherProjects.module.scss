@@ -15,8 +15,9 @@
     z-index: 2;
     display: flex;
     padding: 0;
-    grid-gap: 10px;
+    grid-gap: 0 10px;
     flex-wrap: wrap;
+    margin: 0;
   }
 
   &__item__header {
@@ -66,6 +67,7 @@
 
   &__body {
     font-family: $font-body;
+    letter-spacing: normal;
     font-size: 16px;
     position: relative;
     z-index: 2;
