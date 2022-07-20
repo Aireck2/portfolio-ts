@@ -1,11 +1,6 @@
 @import '../vars.scss';
 
 .IAbout {
-  &__container {
-    max-width: 1000px;
-    margin: 100px auto;
-  }
-
   &__grid_container {
     display: grid;
     grid-template-rows: 1fr auto;
@@ -75,13 +70,11 @@
   &__subheading {
     font-family: $font-display;
     font-size: 32px;
-    color: $not-quite-black;
     font-weight: 900;
   }
 
   &__body {
     font-family: $font-body;
-    color: $not-quite-black;
     font-size: clamp(16px, 2vw, 20px);
     line-height: 32px;
   }

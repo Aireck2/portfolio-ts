@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { List } from '@components'
 
 import styles from '@styles/widgets/IAbout.module.scss'
+import { styled } from '@nextui-org/react'
 
 const About = () => {
   const t = useTranslations('Index')
@@ -25,32 +26,42 @@ const About = () => {
       'LESS',
     ],
   }
-  return (
-    <div className={styles.IAbout__container}>
-      <h2 className={styles.IAbout__subheading}>{t('aboutMe')}</h2>
-      <div className={styles.IAbout__grid_container}>
-        <div>
-          {info.description.map((description, index) => (
-            <p key={index} className={styles.IAbout__body}>
-              {description}
-            </p>
-          ))}
-          <List arr={info.skills} column={2} />
-        </div>
+  const StyledContainer = styled('div', {
+    maxWidth: 1000,
+    margin: '100px auto',
+    position: 'relative',
+    zIndex: 10,
+    // opacity: 0.4,
+  })
 
-        <div className={styles.IAbout__photo_container}>
-          <div className={styles.IAbout__photo__wrapper}>
-            <Image
-              src="/images/about.png"
-              alt="Erick Logo"
-              width={400}
-              height={400}
-              priority={true}
-            />
+  return (
+    <StyledContainer>
+      <div>
+        <h2 className={styles.IAbout__subheading}>{t('aboutMe')}</h2>
+        <div className={styles.IAbout__grid_container}>
+          <div>
+            {info.description.map((description, index) => (
+              <p key={index} className={styles.IAbout__body}>
+                {description}
+              </p>
+            ))}
+            <List arr={info.skills} column={2} />
+          </div>
+
+          <div className={styles.IAbout__photo_container}>
+            <div className={styles.IAbout__photo__wrapper}>
+              <Image
+                src="/images/about.png"
+                alt="Erick Logo"
+                width={400}
+                height={400}
+                priority={true}
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </StyledContainer>
   )
 }
 export default About
