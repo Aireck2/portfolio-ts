@@ -64,6 +64,7 @@ const Projects = () => {
       position: 'relative',
       zIndex: 40,
       display: 'flex',
+      flexWrap: 'wrap',
       color: '$white',
       padding: 0,
       margin: 0,
