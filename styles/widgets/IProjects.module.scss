@@ -1,11 +1,6 @@
 @import '../vars.scss';
 
 .IProjects {
-  &__container {
-    max-width: 1000px;
-    margin: 100px auto;
-  }
-
   &__inner {
     &__container {
       display: grid;
@@ -63,94 +58,14 @@
       grid-column: 1 / -1;
       padding: 25px 25px 20px;
       text-align: left;
-
-      &__links {
-        display: flex;
-        align-items: center;
-        margin: 0px;
-        padding: 0px;
-        list-style: none;
-        position: relative;
-        z-index: 40;
-        color: $white;
-
-        a {
-          display: inline-block;
-          text-decoration: none;
-          color: inherit;
-          position: relative;
-          transition: $transition;
-          padding: 10px;
-
-          svg {
-            width: 20px;
-            height: 20px;
-          }
-
-          &:hover,
-          &:focus {
-            transform: translateY(-3px);
-            color: $brand;
-          }
-        }
-      }
-
-      &__list {
-        position: relative;
-        z-index: 40;
-        color: $white;
-        display: flex;
-        padding: 0;
-        grid-gap: 10px;
-      }
     }
-  }
-
-  &__heading {
-    font-family: $font-display;
-    font-size: 32px;
-    color: $not-quite-black;
-    font-weight: 900;
-    margin: 0px 0px 40px;
   }
 
   &__subheading {
     &__container {
       display: flex;
       flex-direction: column;
-      // align-items: flex-end;
     }
-
-    &__overline {
-      position: relative;
-      display: inline-block;
-      @include text-gradient;
-      z-index: 40;
-      margin-bottom: 10px;
-    }
-    &__title {
-      color: white;
-      position: relative;
-      font-family: $font-display;
-      font-size: 20px;
-      font-weight: bold;
-      z-index: 40;
-      display: inline-block;
-      margin: 0px;
-    }
-  }
-
-  &__body {
-    font-family: $font-body;
-    font-size: 16px;
-    position: relative;
-    z-index: 40;
-    padding: 20px 0;
-    border-radius: $border-radius;
-    background-color: transparent;
-    color: $white;
-    transition: $transition;
-    box-shadow: 0 10px 30px -15px $not-quite-black;
   }
 }
 .IProjects__inner__container {
@@ -205,15 +120,6 @@
           grid-area: 1 / 1 / -1 / 7;
           grid-column: 1 / 9;
           padding: 0;
-
-          &__links {
-            color: $not-quite-black;
-            z-index: 1;
-          }
-          &__list {
-            color: $not-quite-black;
-            z-index: 1;
-          }
         }
         &__image {
           grid-area: 1 / 6 / -1 / -1;
@@ -233,16 +139,6 @@
               }
             }
           }
-        }
-      }
-      &__body {
-        background-color: $white;
-        color: $not-quite-black;
-        padding: 25px;
-      }
-      &__subheading {
-        &__title {
-          color: $not-quite-black;
         }
       }
     }
