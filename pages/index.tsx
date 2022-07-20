@@ -47,7 +47,7 @@ const Home: NextPage<any> = ({ githubInfo }) => {
             <Experience />
           </Layout>
         </div>
-        <section className={styles.Home__experience} id="projects">
+        <section className={styles.Home__projects} id="projects">
           <Layout>
             <Projects />
             <LooperBG />
