@@ -1,4 +1,4 @@
-import { NextPage } from 'next'
+import { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 
 import { Layout, Navbar } from '@layout'
@@ -13,10 +13,11 @@ import {
   OtherProjects,
 } from '@screens'
 
-import styles from '@styles/views/Home.module.scss'
 import LooperBG from 'components/basics/LooperBG'
 
-const Home: NextPage = () => {
+import styles from '@styles/views/Home.module.scss'
+
+const Home: NextPage<any> = ({ githubInfo }) => {
   return (
     <>
       <Head>
@@ -49,13 +50,14 @@ const Home: NextPage = () => {
         <section className={styles.Home__experience} id="projects">
           <Layout>
             <Projects />
+            <LooperBG />
             <OtherProjects />
           </Layout>
         </section>
 
         <section className={styles.Home__contact} id="contact">
           <Layout>
-            <Contact />
+            <Contact github={githubInfo} />
           </Layout>
         </section>
       </main>
@@ -66,13 +68,17 @@ const Home: NextPage = () => {
 }
 export default Home
 
-export function getStaticProps({ locale }: { locale: string }) {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const response = await fetch('https://api.github.com/repos/Aireck2/portfolio-ts')
+  const { stargazers_count, forks_count } = await response.json()
+
   return {
     props: {
       messages: {
         ...require(`../locales/${locale}/translation.json`),
       },
       now: new Date().getTime(),
+      githubInfo: { stars: stargazers_count, forks: forks_count },
     },
   }
 }
