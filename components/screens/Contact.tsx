@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
 
 import { Button, Icon } from '@components'
 
 import styles from '@styles/widgets/IContact.module.scss'
 
-const Contact = () => {
+interface Github {
+  stars?: number
+  forks?: number
+}
+
+const Contact: React.FC<{ github: Github }> = ({ github }) => {
   const t = useTranslations('Index')
-  const [githubInfo, setGitHubInfo] = useState({
-    stars: '0',
-    forks: '0',
-  })
 
   const info = {
     email: 'erickescribaa@gmail.com',
@@ -18,12 +18,12 @@ const Contact = () => {
       {
         type: 'star' as const,
         url: 'https://github.com/Aireck2/portfolio-next',
-        count: githubInfo.stars,
+        count: github?.stars,
       },
       {
         type: 'fork' as const,
         url: 'https://github.com/Aireck2/portfolio-next',
-        count: githubInfo.forks,
+        count: github?.forks,
       },
     ],
     socialArr: [
@@ -33,18 +33,6 @@ const Contact = () => {
       { type: 'codePen' as const, url: 'https://codepen.io/Aireck' },
     ],
   }
-  useEffect(() => {
-    fetch('https://api.github.com/repos/Aireck2/portfolio-ts')
-      .then((response) => response.json())
-      .then((json) => {
-        const { stargazers_count, forks_count } = json
-        setGitHubInfo({
-          stars: stargazers_count,
-          forks: forks_count,
-        })
-      })
-      .catch((e) => console.error(e))
-  }, [])
 
   return (
     <div className={styles.IContact__container}>
@@ -66,7 +54,7 @@ const Contact = () => {
       <ul className={styles.IContact__github_stats}>
         {info.github.map((item, index) => (
           <li key={index}>
-            <Icon type={item.type} url={item.url} size="small" text={item.count.toString()} />
+            <Icon type={item.type} url={item.url} size="small" text={item?.count?.toString()} />
           </li>
         ))}
       </ul>
@@ -74,4 +62,5 @@ const Contact = () => {
     </div>
   )
 }
+
 export default Contact
