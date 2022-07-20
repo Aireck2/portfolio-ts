@@ -21,7 +21,7 @@
   &__subheading {
     margin-bottom: 50px;
     font-family: $font-body;
-    color: $dark-not-black;
+    // color: $dark-not-black;
 
     line-height: 32px;
     font-size: clamp(16px, 2vw, 20px);
@@ -35,7 +35,7 @@
     color: $gray-3;
   }
   &__social {
-    color: $dark-not-black;
+    // color: $dark-not-black;
     max-width: 600px;
     margin: auto;
     display: flex;
@@ -43,7 +43,7 @@
     grid-gap: 10px;
   }
   &__github_stats {
-    color: $dark-not-black;
+    // color: $dark-not-black;
     max-width: 600px;
     margin: auto;
     display: flex;
