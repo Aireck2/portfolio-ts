@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/aireck2/portfolio-next">
+  <a href="https://github.com/aireck2/portfolio-ts">
     <img src="public/logos/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -15,14 +15,14 @@
   <p align="center">
     My awesome personal Portfolio!
     <br />
-    <!-- <a href="https://github.com/aireck2/portfolio-next"><strong>Explore the docs »</strong></a>
+    <!-- <a href="https://github.com/aireck2/portfolio-ts"><strong>Explore the docs »</strong></a>
     <br /> -->
     <!-- <br /> -->
-    <a href="https://github.com/aireck2/portfolio-next">View Demo</a>
+    <a href="https://github.com/aireck2/portfolio-ts">View Demo</a>
     ·
-    <a href="https://github.com/aireck2/portfolio-next/issues">Report Bug</a>
+    <a href="https://github.com/aireck2/portfolio-ts/issues">Report Bug</a>
     ·
-    <a href="https://github.com/aireck2/portfolio-next/issues">Request Feature</a>
+    <a href="https://github.com/aireck2/portfolio-ts/issues">Request Feature</a>
   </p>
 </p>
 
@@ -86,7 +86,7 @@ For this project I decided to use technologies that I am comfortable working wit
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/aireck2/portfolio-next.git
+   git clone https://github.com/aireck2/portfolio-ts.git
    ```
 2. Install NPM packages
    ```sh
@@ -110,7 +110,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_ --
 
 ## Roadmap
 
-See the [open issues](https://github.com/aireck2/portfolio-next/issues) for a list of proposed
+See the [open issues](https://github.com/aireck2/portfolio-ts/issues) for a list of proposed
 features (and known issues).
 
 <!-- CONTRIBUTING -->
@@ -141,7 +141,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Erick Escriba - [@erickescribaa](https://twitter.com/erickescribaa) - erickescribaa@gmail.com
 
 Project Link:
-[https://github.com/aireck2/portfolio-next](https://github.com/aireck2/portfolio-next)
+[https://github.com/aireck2/portfolio-ts](https://github.com/aireck2/portfolio-ts)
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -163,16 +163,16 @@ Project Link:
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]:
-  https://img.shields.io/github/contributors/aireck2/portfolio-next.svg?style=for-the-badge
-[contributors-url]: https://github.com/aireck2/portfolio-next/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/aireck2/portfolio-next.svg?style=for-the-badge
-[forks-url]: https://github.com/aireck2/portfolio-next/network/members
-[stars-shield]: https://img.shields.io/github/stars/aireck2/portfolio-next.svg?style=for-the-badge
-[stars-url]: https://github.com/aireck2/portfolio-next/stargazers
-[issues-shield]: https://img.shields.io/github/issues/aireck2/portfolio-next.svg?style=for-the-badge
-[issues-url]: https://github.com/Aireck2/portfolio-next/issues
+  https://img.shields.io/github/contributors/aireck2/portfolio-ts.svg?style=for-the-badge
+[contributors-url]: https://github.com/aireck2/portfolio-ts/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/aireck2/portfolio-ts.svg?style=for-the-badge
+[forks-url]: https://github.com/aireck2/portfolio-ts/network/members
+[stars-shield]: https://img.shields.io/github/stars/aireck2/portfolio-ts.svg?style=for-the-badge
+[stars-url]: https://github.com/aireck2/portfolio-ts/stargazers
+[issues-shield]: https://img.shields.io/github/issues/aireck2/portfolio-ts.svg?style=for-the-badge
+[issues-url]: https://github.com/Aireck2/portfolio-ts/issues
 [license-shield]:
-  https://img.shields.io/github/license/aireck2/portfolio-next.svg?style=for-the-badge
+  https://img.shields.io/github/license/aireck2/portfolio-ts.svg?style=for-the-badge
 [license-url]: https://github.com/aireck2/portfolio-next/blob/main/LICENSE.txt
 [linkedin-shield]:
   https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
