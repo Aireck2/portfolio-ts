@@ -3,7 +3,7 @@ export const projects = [
     name: 'Personal Portfolio',
     description: '1ProjectDescription',
     technologies: ['TypeScript', 'NextJS', 'SCSS'],
-    imageRef: '/images/projects/portfolio.jpg',
+    imageRef: '/images/projects/portfolio.png',
     imageUrl: 'https://github.com/Aireck2/portfolio-ts',
     links: [
       { type: 'github' as const, url: 'https://github.com/Aireck2/portfolio-ts' },
