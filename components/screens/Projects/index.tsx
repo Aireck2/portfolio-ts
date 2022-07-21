@@ -55,7 +55,7 @@ const Projects = () => {
       bg: 'unset',
       bs: '0 10px 30px -15px #23272a',
       '@media screen and (min-width: 767px)': {
-        bg: '$background',
+        bg: '$accents0',
         color: '$accents9',
         padding: '25px',
       },

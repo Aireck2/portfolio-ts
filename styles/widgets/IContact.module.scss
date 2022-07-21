@@ -10,7 +10,6 @@
   }
 
   &__heading {
-    color: $black;
     font-family: $font-display;
     font-weight: 900;
     line-height: 95%;
@@ -31,11 +30,7 @@
     }
   }
 
-  &__body {
-    color: $gray-3;
-  }
   &__social {
-    // color: $dark-not-black;
     max-width: 600px;
     margin: auto;
     display: flex;
