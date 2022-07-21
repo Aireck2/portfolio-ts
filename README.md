@@ -1,7 +1,8 @@
 <!-- [![Contributors][contributors-shield]][contributors-url] -->
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url] [![LinkedIn][linkedin-shield]][linkedin-url]
+
+[![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url] [![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -58,13 +59,16 @@
 
 <!-- [![Product Name Screen Shot][(./public/images/portfolio-bg.png)](https://example.com) -->
  <a href="https://erickescriba.vercel.app/">
-    <img src="public/images/portfolio-bg.png" alt="Logo" width="800" height="600">
+    <img src="public/images/projects/portfolio.png" alt="Logo" width="100%" height="100%">
   </a>
 
-The main purpose of this project is to show a collection of evidence, which not only summarizes my work, but also explains my individual learning processes.
+The main purpose of this project is to show a collection of evidence, which not only summarizes my
+work, but also explains my individual learning processes.
+
 ### Built With
 
-For this project I decided to use technologies that I am comfortable working with, in order to keep development time to a minimum, which are:
+For this project I decided to use technologies that I am comfortable working with, in order to keep
+development time to a minimum, which are:
 
 - [Nextjs](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -73,7 +77,6 @@ For this project I decided to use technologies that I am comfortable working wit
 <!-- GETTING STARTED -->
 
 ## Getting Started
-
 
 ### Prerequisites
 
@@ -120,7 +123,8 @@ features (and known issues).
 Contributions are what make the open source community such an amazing place to be learn, inspire,
 and create. Any contributions you make are **greatly appreciated**.
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/aireck2/portfolio-ts/compare/).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a
+branch, add commits, and [open a pull request](https://github.com/aireck2/portfolio-ts/compare/).
 
 <!-- 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -140,24 +144,21 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Erick Escriba - [@erickescribaa](https://twitter.com/erickescribaa) - erickescribaa@gmail.com
 
-Project Link:
-[https://github.com/aireck2/portfolio-ts](https://github.com/aireck2/portfolio-ts)
+Project Link: [https://github.com/aireck2/portfolio-ts](https://github.com/aireck2/portfolio-ts)
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
 
+- [NextUI](https://nextui.org)
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
 - [Vercel](https://pages.github.com)
 - [Font Awesome](https://fontawesome.com)
-<!-- - [Loaders.css](https://connoratherton.com/loaders) -->
-<!-- - [Slick Carousel](https://kenwheeler.github.io/slick) -->
-<!-- - [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll) -->
-<!-- - [Sticky Kit](http://leafo.net/sticky-kit) -->
-<!-- - [JVectorMap](http://jvectormap.com) -->
-
-<!-- vercel -->
+  <!-- - [Loaders.css](https://connoratherton.com/loaders) -->
+  <!-- - [Slick Carousel](https://kenwheeler.github.io/slick) -->
+  <!-- - [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll) -->
+  <!-- - [Sticky Kit](http://leafo.net/sticky-kit) -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -171,8 +172,7 @@ Project Link:
 [stars-url]: https://github.com/aireck2/portfolio-ts/stargazers
 [issues-shield]: https://img.shields.io/github/issues/aireck2/portfolio-ts.svg?style=for-the-badge
 [issues-url]: https://github.com/Aireck2/portfolio-ts/issues
-[license-shield]:
-  https://img.shields.io/github/license/aireck2/portfolio-ts.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/aireck2/portfolio-ts.svg?style=for-the-badge
 [license-url]: https://github.com/aireck2/portfolio-next/blob/main/LICENSE.txt
 [linkedin-shield]:
   https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
