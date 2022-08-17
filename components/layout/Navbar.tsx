@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
               </Col>
             </Row>
           </Col>
-          <MobileNavigation menu={menuItems} />
+          <MobileNavigation menu={menuItems} resumeBtn={<ResumeButton fontSize="20px" />} />
         </Container>
       </StyledNavContainer>
     </StyledNavMainContainer>

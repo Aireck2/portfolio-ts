@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 
 import { Dropdown } from '@nextui-org/react'
+import useIsMounted from '@hooks/useIsMounted'
 
 import constants, { Languages } from '@helpers/constants'
 
@@ -9,6 +10,10 @@ export const LanguageSelect = () => {
   const { locale, locales, route } = useRouter()
 
   const otherLocale = locales?.filter((cur) => cur !== locale)
+  const isMounted = useIsMounted()
+  if (!isMounted) {
+    return null
+  }
 
   return (
     <Dropdown>
