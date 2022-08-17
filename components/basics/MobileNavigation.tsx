@@ -8,6 +8,7 @@ interface Props {
   open?: boolean
   css?: CSS
   menu: any[]
+  resumeBtn: React.ReactNode
 }
 
 const StyledButton = styled('button', {
@@ -94,7 +95,7 @@ const StyledAside = styled('aside', {
   },
 })
 
-export const MobileNavigation: React.FC<Props> = ({ css, menu }) => {
+export const MobileNavigation: React.FC<Props> = ({ css, menu, resumeBtn }) => {
   const [active, setActive] = useState(false)
   const showMobile = useMediaQuery(767)
   const asideRef = useRef(null)
@@ -102,7 +103,6 @@ export const MobileNavigation: React.FC<Props> = ({ css, menu }) => {
   const handleToggleMenu = () => {
     document.querySelector('body')?.classList.toggle('showBlur')
     setActive(!active)
-    console.log('toggleMenu')
   }
 
   const handleCloseMenu = () => {
@@ -139,6 +139,7 @@ export const MobileNavigation: React.FC<Props> = ({ css, menu }) => {
               {name}
             </Link>
           ))}
+          {resumeBtn}
         </StyledAside>
       </div>
     )

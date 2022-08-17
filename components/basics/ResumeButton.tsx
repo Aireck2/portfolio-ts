@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router'
 
 import { useTranslations } from 'next-intl'
-import { Button, Link } from '@nextui-org/react'
+import { Link } from '@nextui-org/react'
 
-export const ResumeButton = () => {
+export const ResumeButton: React.FC<{ fontSize?: string }> = ({ fontSize = '16px' }) => {
   const { locale } = useRouter()
   const t = useTranslations('Index')
 
@@ -12,7 +12,7 @@ export const ResumeButton = () => {
       color="secondary"
       href={`/resume_${locale?.toUpperCase()}.pdf`}
       target="_blank"
-      css={{ alignItems: 'center' }}
+      css={{ alignItems: 'center', fontSize }}
     >
       <>{t('resume')}</>
     </Link>
