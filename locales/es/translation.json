@@ -1,47 +1,48 @@
 {
-    "Index": {
-        "about": "Sobre mi",
-        "experience": "Experiencia",
-        "contact": "Contacto",
-        "projects": "Proyectos",
-        "resume": "CV",
+  "Index": {
+    "about": "Sobre mi",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "projects": "Proyectos",
+    "resume": "CV",
 
-        "greet": "Hola, mi nombre es",
-        "phrase": "Construyo cosas para la web",
-        "description": "Soy un desarrollador front-end, resido en Lima, Perú. Actualmente me dedico al desarrollo web y me apasiona la creación de sitios web excepcionales.",
-        "getInTouch": "Contáctame",
+    "greet": "Hola, mi nombre es",
+    "phrase": "Construyo cosas para la web",
+    "description": "Soy un desarrollador full stack, resido en Lima, Perú. Actualmente me dedico al desarrollo web y me apasiona la creación de sitios web excepcionales.",
+    "getInTouch": "Contáctame",
 
-        "aboutMe": "Sobre mí",
-        "description1": "¡Hola! Mi nombre es Erick y disfruto creando cosas en Internet. Mi interés por el desarrollo web comenzó en 2018, luego de la primera conversación que tuve cuando afortunadamente obtuve una beca para realizar un curso de habilidades socioemocionales y desarrollo web de la mano de Fundación Forge (ONG) y Via Codigo, quienes me enseñaron lo básico: HTML5 , CSS3 y los fundamentos de JS.",
-        "description2": "Hoy en día, tengo el privilegio de trabajar en una startup que me ha enseñado mucho en poco tiempo. Mi principal enfoque estos días es implementar las soluciones más beneficiosas en proyectos internos, que se adapten al modelo de negocio de Equip Industry.",
-        "description3": "Estas son algunas tecnologías con las que he trabajado recientemente:",
+    "aboutMe": "Sobre mí",
+    "description1": "¡Hola de nuevo! Te cuento un poco sobre mi:  Mi interés por el desarrollo web comenzó en 2018, lleve un curso que fue inpartido por Fundación Forge (ONG) y Via Codigo, donde aprendí lo básico: HTML5 , CSS3 y fundamentos de JS.",
+    "description2": "2019: Conseguí el empleo que me cambio la vida, donde aprendí muchas cosas y conocí gente extraordinaria.",
+    "description3": "Hoy en día, tengo el privilegio de seguir trabajando en la startup que me ha enseñado mucho en poco tiempo. Mi principal enfoque estos días es implementar las soluciones más beneficiosas en proyectos internos, que se adapten al modelo de negocio de EQUIP.",
+    "description4": "Mi stack tecnológico es el siguiente: ",
 
-        "work": "Experiencia",
-        "job": "Desarrollador front-end",
-        "jobDate1": "Dic 2019 - Presente",
-        "jobDescription1": "Escribí código moderno, eficiente y robusto para una amplia gama de proyectos internos.",
-        "jobDescription2": "Trabajé con una variedad de lenguajes y frameworks como JavaScript, TypeScript, React, Nextjs, Graphql, etc.",
-        "jobDescription3": "Trabajé en estrecha colaboración con los diseñadores y el equipo comercial para desarrollar, documentar y administrar el sitio web utilizando Nextjs, css y TypeScript.",
-        "jobDescription4": "Utilice API para conectar la aplicación web con varios servicios y sistemas.",
+    "work": "Experiencia",
+    "job": "Desarrollador full stack",
+    "jobDate1": "Dic 2019 - Presente",
+    "jobDescription1": "Escribí código moderno, eficiente y robusto para una amplia gama de proyectos internos.",
+    "jobDescription2": "Trabajé con una variedad de lenguajes y frameworks como JavaScript, TypeScript, React, Nextjs, Graphql, etc.",
+    "jobDescription3": "Trabajé en estrecha colaboración con los diseñadores y el equipo comercial para desarrollar, documentar y administrar el sitio web utilizando Nextjs, css y TypeScript.",
+    "jobDescription4": "Utilice API para conectar la aplicación web con varios servicios y sistemas.",
 
-        "projectsTitle": "Proyectos",
-        "projectSubtitle": "Proyecto destacado",
-        "1ProjectDescription": "El objetivo principal de este proyecto es mostrar una colección de evidencia, que no solo resume mi trabajo, sino que también explica mis procesos de aprendizaje individuales.",
-        "2ProjectDescription": "Aplicación de una sola página que muestra cómo se puede usar React con react-intl para la gestión de traducciones con Poedit",
-        "3ProjectDescription": "Una landing page para la empresa Dely, se desarrolló en colaboración con mi colega para un trabajo temporal.",
+    "projectsTitle": "Proyectos",
+    "projectSubtitle": "Proyecto destacado",
+    "1ProjectDescription": "El objetivo principal de este proyecto es mostrar una colección de evidencia, que no solo resume mi trabajo, sino que también explica mis procesos de aprendizaje individuales.",
+    "2ProjectDescription": "Aplicación de una sola página que muestra cómo se puede usar React con react-intl para la gestión de traducciones con Poedit",
+    "3ProjectDescription": "Una landing page para la empresa Dely, se desarrolló en colaboración con mi colega para un trabajo temporal.",
 
-        "otherProjectsTitle": "Otros Proyectos Destacados",
-        "otherProjectDescription1": "Un ejemplo de lista de campos dinamico en un formulario usando Formik, para la gestión de formularios, y AntD, para los componentes de la interfaz de usuario",
-        "otherProjectDescription2": "Una API Graphql que usa Apollo, Express, NodeJS y SpaceX API para obtener estadísticas de lanzamiento",
-        "otherProjectDescription3": "Cree diapositivas de presentación, una introducción a Apollo Client, usando Gastby y gatsby-plugin-mdx, que me permitieron escribir JSX incrustado dentro de Markdown.",
+    "otherProjectsTitle": "Otros Proyectos Destacados",
+    "otherProjectDescription1": "Un ejemplo de lista de campos dinamico en un formulario usando Formik, para la gestión de formularios, y AntD, para los componentes de la interfaz de usuario",
+    "otherProjectDescription2": "Una API Graphql que usa Apollo, Express, NodeJS y SpaceX API para obtener estadísticas de lanzamiento",
+    "otherProjectDescription3": "Cree diapositivas de presentación, una introducción a Apollo Client, usando Gastby y gatsby-plugin-mdx, que me permitieron escribir JSX incrustado dentro de Markdown.",
 
-        "whatsNext": "¿Que sigue?",
-        "notcontactDescription": "Aunque actualmente no estoy buscando nuevas oportunidades, mi bandeja de entrada siempre está abierta. Ya sea que tenga una pregunta o simplemente quiera saludar, ¡haré todo lo posible para responder!",
-        "contactDescription": "¡No dudes en contactarme!",
-        "sayHello": "Salúdame",
+    "whatsNext": "¿Que sigue?",
+    "notcontactDescription": "Aunque actualmente no estoy buscando nuevas oportunidades, mi bandeja de entrada siempre está abierta. Ya sea que tenga una pregunta o simplemente quiera saludar, ¡haré todo lo posible para responder!",
+    "contactDescription": "¡No dudes en contactarme!",
+    "sayHello": "Salúdame",
 
-        "footerQuote": "Ten 365 días bonitos",
+    "footerQuote": "Ten 365 días bonitos",
 
-        "switchLocale": "Cambiar a {locale, select, es {Español} en {Inglés} other {}}"
-    }
+    "switchLocale": "Cambiar a {locale, select, es {Español} en {Inglés} other {}}"
+  }
 }
