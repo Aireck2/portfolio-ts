@@ -10,7 +10,7 @@ const About = () => {
   const t = useTranslations('Index')
 
   const info = {
-    description: [t('description1'), t('description2'), t('description3')],
+    description: [t('description1'), t('description2'), t('description3'), t('description4')],
     skills: [
       'Typescript',
       'NextJS',
