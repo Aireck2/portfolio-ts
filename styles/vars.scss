@@ -49,6 +49,30 @@ $border-radius: 4px;
 $background-gradient: linear-gradient(90deg, #f7b500 0.03%, #b620e0 48.96%, #32c5ff 99.97%);
 $brand-new: #844fba;
 
+@font-face {
+  font-family: 'Gilmer';
+  src: url('/fonts/Gilmer/GilmerRegular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gilmer';
+  src: url('/fonts/Gilmer/GilmerBold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Metro';
+  src: url('/fonts/MetroSans/MetroSansRegular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Metro';
+  src: url('/fonts/MetroSans/MetroSansBold.ttf');
+  font-weight: bold;
+}
+
 @mixin text-gradient {
   background: $background-gradient;
   background-clip: text;
