@@ -47,6 +47,7 @@
         border: 4px solid transparent;
         background: $background-gradient border-box;
         transform: scale(102%);
+        mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
         -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;
