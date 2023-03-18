@@ -15,7 +15,7 @@ import config from '@helpers/config.helper'
 
 import globalStyles from '@styles/globalStyles'
 
-const Application: NextPage<AppProps<{}>> = ({ Component, pageProps }) => {
+const Application: NextPage<AppProps<{ messages: any; now: any }>> = ({ Component, pageProps }) => {
   const router = useRouter()
   const theme = useTheme()
 
