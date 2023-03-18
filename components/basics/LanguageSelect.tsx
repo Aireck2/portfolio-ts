@@ -35,7 +35,7 @@ export const LanguageSelect = () => {
           >
             {locale !== 'de' ? (
               <Link href={route} locale={locale}>
-                <a>{constants.languages[locale as Languages].text}</a>
+                {constants.languages[locale as Languages].text}
               </Link>
             ) : (
               constants.languages[locale as Languages].text

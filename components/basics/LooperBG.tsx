@@ -1,3 +1,4 @@
+import useIsMounted from '@hooks/useIsMounted'
 import { styled, CSS } from '@nextui-org/react'
 
 export interface Props {
@@ -21,6 +22,9 @@ const StyledSvg = styled('svg', {
 })
 
 const LooperBG: React.FC<Props> = ({ width, height, ...props }) => {
+  const isMounted = useIsMounted()
+
+  if (!isMounted) return null
   return (
     <StyledSvg
       width={width}
