@@ -8,7 +8,7 @@
 
     "greet": "Hi, my name is",
     "phrase": "I build things for the web",
-    "description": "I'm a Full stack developer based in Lima, Peru. I'm currently into web development and I'm passionate in building exceptional web apps",
+    "description": "I'm a Full-stack developer based in Lima, Peru. I'm currently into web development and I'm passionate in building exceptional web apps",
     "getInTouch": "Get in touch",
 
     "aboutMe": "About me",
@@ -18,7 +18,7 @@
     "description4": "My tech stack is as follows:",
 
     "work": "Where I've worked",
-    "job": "Full stack developer",
+    "job": "Full-stack developer",
     "jobDate1": "Dec 2019 - Present",
     "jobDescription1": "I wrote modern, efficient and robust code for a wide range of internal projects.",
     "jobDescription2": "I worked with a variety of languages and frameworks like JavaScript, TypeScript, React, Nextjs, Graphql, etc.",

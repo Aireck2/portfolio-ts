@@ -8,7 +8,7 @@
 
     "greet": "Hola, mi nombre es",
     "phrase": "Construyo cosas para la web",
-    "description": "Soy un desarrollador Full stack, resido en Lima, Perú. Actualmente me dedico al desarrollo web y me apasiona la creación de aplicaciones web excepcionales.",
+    "description": "Soy desarrollador Full-stack, resido en Lima, Perú. Actualmente me dedico al desarrollo web y me apasiona la creación de aplicaciones web excepcionales.",
     "getInTouch": "Contáctame",
 
     "aboutMe": "Sobre mí",
@@ -18,7 +18,7 @@
     "description4": "Mi stack tecnológico es el siguiente: ",
 
     "work": "Experiencia",
-    "job": "Desarrollador Full stack",
+    "job": "Desarrollador Full-stack",
     "jobDate1": "Dic 2019 - Presente",
     "jobDescription1": "Escribí código moderno, eficiente y robusto para una amplia gama de proyectos internos.",
     "jobDescription2": "Trabajé con una variedad de lenguajes y frameworks como JavaScript, TypeScript, React, Nextjs, Graphql, etc.",
