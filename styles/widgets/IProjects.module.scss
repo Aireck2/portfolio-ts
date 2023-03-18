@@ -27,7 +27,7 @@
         position: relative;
         border-radius: $border-radius;
         z-index: 30;
-        height: 100%;
+        height: 400px;
         transition: $transition;
 
         &::before {
@@ -41,15 +41,10 @@
           mix-blend-mode: screen;
         }
 
-        & > span {
-          height: 100% !important;
-
-          & img {
-            object-fit: cover;
-            border-radius: $border-radius;
-            // mix-blend-mode: multiply;
-            filter: grayscale(100%) contrast(1) brightness(90%);
-          }
+        & img {
+          object-fit: cover;
+          border-radius: $border-radius;
+          filter: grayscale(100%) contrast(1) brightness(90%);
         }
       }
     }
@@ -123,7 +118,9 @@
         }
         &__image {
           grid-area: 1 / 6 / -1 / -1;
-          height: unset;
+          // height: unset;
+          min-height: 400px;
+
           filter: grayscale(100%) contrast(1) brightness(40%);
           &:hover {
             filter: none;

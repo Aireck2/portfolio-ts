@@ -53,8 +53,8 @@ const About = () => {
               <Image
                 src="/images/about.png"
                 alt="Erick Logo"
-                width={400}
-                height={400}
+                width={300}
+                height={300}
                 priority={true}
               />
             </div>

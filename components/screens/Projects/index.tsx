@@ -68,6 +68,7 @@ const Projects = () => {
       color: '$white',
       padding: 0,
       margin: 0,
+      marginTop: 10,
       gridGap: '10px',
       '@media screen and (min-width: 767px)': {
         color: 'unset',
@@ -124,8 +125,10 @@ const Projects = () => {
                   src={project.imageRef}
                   priority={true}
                   alt="Project photo"
-                  width={700}
-                  height={438}
+                  fill
+                  sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
                 />
               </a>
             </div>
