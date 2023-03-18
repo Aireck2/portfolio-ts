@@ -15,9 +15,10 @@ const StyledContainer = styled('div', {
     letterSpacing: '$normal',
     '&.body': {
       color: '$accents7',
+      margin: '0 0 20px 0',
     },
     '&.subtitle': {
-      margin: 0,
+      margin: '0',
     },
   },
   h2: {

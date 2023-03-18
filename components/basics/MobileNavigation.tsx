@@ -1,6 +1,6 @@
 import { useMediaQuery } from '@hooks/useMediaQuery'
 import { useOutside } from '@hooks/useOutside'
-import { CSS, Link, styled, Text } from '@nextui-org/react'
+import { CSS, Link, styled } from '@nextui-org/react'
 
 import { useRef, useState } from 'react'
 

@@ -8,8 +8,8 @@ const Experience = () => {
   const t = useTranslations('Index')
 
   const info = {
-    company: 'EquipIndustry',
-    companyWeb: 'http://equipindustry.com',
+    company: 'Equip',
+    companyWeb: 'http://equipconstruye.com',
     jobPosition: t('job'),
     jobDescription: [
       t('jobDescription1'),
