@@ -1,4 +1,5 @@
-import { styled, Button as NButton } from '@nextui-org/react'
+import useIsMounted from '@hooks/useIsMounted'
+import { styled } from '@nextui-org/react'
 
 interface IProps {
   href: string
@@ -42,10 +43,16 @@ const StyledButton = styled('div', {
   },
 })
 
-export const Button: React.FC<IProps> = ({ href, text }) => (
-  <StyledButton>
-    <a href={href} target="_blank" rel="noreferrer">
-      {text}
-    </a>
-  </StyledButton>
-)
+export const Button: React.FC<IProps> = ({ href, text }) => {
+  const isMounted = useIsMounted()
+
+  if (!isMounted) return null
+
+  return (
+    <StyledButton>
+      <a href={href} target="_blank" rel="noreferrer">
+        {text}
+      </a>
+    </StyledButton>
+  )
+}

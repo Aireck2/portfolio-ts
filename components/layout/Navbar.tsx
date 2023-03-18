@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import NextLink from 'next/link'
-import Image from 'next/future/image'
+import Image from 'next/image'
 
 import { Row, Col, Spacer, Link, Container } from '@nextui-org/react'
 import { useTranslations } from 'next-intl'
 
 import { LanguageSelect, MobileNavigation, ResumeButton, ThemeToggle } from '@components'
+import useIsMounted from '@hooks/useIsMounted'
 
 import { StyledNavContainer, StyledNavMainContainer } from './styles'
 
 const Navbar: React.FC = () => {
   const [scrollPosition, setScrollPosition] = useState(0)
+  const isMounted = useIsMounted()
 
   const t = useTranslations('Index')
 
@@ -56,6 +58,8 @@ const Navbar: React.FC = () => {
     }
   }, [])
 
+  if (!isMounted) return null
+
   return (
     <StyledNavMainContainer>
       <StyledNavContainer detached={detached} showBlur={showBlur}>
@@ -63,15 +67,15 @@ const Navbar: React.FC = () => {
           <Col css={{ width: '34px' }}>
             <Row align="center">
               <NextLink href="/">
-                <Link href="/">
-                  <Image
-                    src="/logos/logo.svg"
-                    alt="Erick Logo"
-                    width={34}
-                    height={34}
-                    style={{ maxWidth: 'unset' }}
-                  />
-                </Link>
+                {/* <Link href="/"> */}
+                <Image
+                  src="/logos/logo.svg"
+                  alt="Erick Logo"
+                  width={34}
+                  height={34}
+                  style={{ maxWidth: 'unset' }}
+                />
+                {/* </Link> */}
               </NextLink>
             </Row>
           </Col>
