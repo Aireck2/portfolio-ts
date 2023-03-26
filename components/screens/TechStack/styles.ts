@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 export const StyledTechStack = styled.div`
   display: flex;
-  grid-gap: 30px;
+  grid-gap: 20px;
   position: relative;
   padding: 20px;
+  flex-wrap: wrap;
   .background {
     position: absolute;
     z-index: 200;
