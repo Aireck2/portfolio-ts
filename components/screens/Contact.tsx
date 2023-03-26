@@ -58,7 +58,7 @@ const Contact: React.FC<{ github: Github }> = ({ github }) => {
           </li>
         ))}
       </ul>
-      <p className={styles.IContact__body}> 2023 Erick Escriba - {t('footerQuote')}</p>
+      <p className={styles.IContact__body}> © 2023 Erick Escriba - {t('footerQuote')}</p>
     </div>
   )
 }
