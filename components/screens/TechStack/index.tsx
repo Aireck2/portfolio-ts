@@ -20,7 +20,7 @@ const TechStack: FC<TechStackProps> = ({ showCaption = false }) => {
 
   return (
     <>
-      <StyledTechStack className="dock">
+      <StyledTechStack>
         <div className="background" />
         {techStackList.map((ts) => (
           <Fragment key={ts.src}>
